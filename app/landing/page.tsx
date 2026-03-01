@@ -497,18 +497,36 @@ export default function LandingPage() {
           <h2 className="font-display text-[clamp(1.4rem,3vw,2.2rem)] font-extrabold tracking-tight mb-7">
             Arrástralo en 1, 2 por 3
           </h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {steps.map(({ n, title, desc }) => (
-              <Card key={n} className="bg-background hover:shadow-sm hover:border-warm-300">
-                <CardContent className="p-5 sm:p-6">
-                  <span className="inline-grid place-items-center size-9 rounded-full bg-primary text-primary-foreground font-display text-sm font-extrabold mb-4">
-                    {n}
-                  </span>
-                  <h4 className="font-display text-base sm:text-lg font-bold tracking-tight mb-1.5">{title}</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="relative mt-2 rounded-2xl border border-border bg-gradient-to-b from-[#f8fbff] to-white p-4 sm:p-8 overflow-hidden">
+            <div className="absolute -left-20 top-8 w-72 h-72 rounded-full bg-sky-100/60 blur-2xl" />
+
+            <div className="relative space-y-4">
+              <div className="relative ml-2 sm:ml-8 w-[92%] sm:w-[72%] rounded-xl border border-border bg-white shadow-md p-3 sm:p-4">
+                <span className="absolute -left-4 -top-4 inline-grid place-items-center size-9 rounded-full bg-blue-600 text-white font-extrabold text-sm">1</span>
+                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">Solicitud</p>
+                <p className="font-semibold mt-1">Publica tu requerimiento</p>
+                <p className="text-sm text-muted-foreground mt-1">Puerto, fecha(s) tentativas, tipo de contenedor y destino.</p>
+              </div>
+
+              <div className="relative ml-8 sm:ml-20 w-[94%] sm:w-[86%] rounded-xl border border-border bg-white shadow-md p-3 sm:p-4">
+                <span className="absolute -left-4 -top-4 inline-grid place-items-center size-9 rounded-full bg-blue-600 text-white font-extrabold text-sm">2</span>
+                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">Comparativo</p>
+                <p className="font-semibold mt-1">Recibe y compara ofertas</p>
+                <p className="text-sm text-muted-foreground mt-1">Filtra por tarifa, condiciones de pago, certificaciones y calificación.</p>
+                <div className="mt-3 grid gap-2 sm:grid-cols-3 text-xs">
+                  <div className="rounded border p-2">$45,900 + IVA</div>
+                  <div className="rounded border p-2">$48,300 + IVA</div>
+                  <div className="rounded border p-2">$44,500 + IVA</div>
+                </div>
+              </div>
+
+              <div className="relative ml-4 sm:ml-12 w-[96%] sm:w-[78%] rounded-xl border border-border bg-white shadow-md p-3 sm:p-4">
+                <span className="absolute -left-4 -top-4 inline-grid place-items-center size-9 rounded-full bg-blue-600 text-white font-extrabold text-sm">3</span>
+                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide">Ejecución</p>
+                <p className="font-semibold mt-1">Reserva al instante y da seguimiento</p>
+                <p className="text-sm text-muted-foreground mt-1">Asignación, documentos, GPS y notificaciones por WhatsApp/correo en un solo flujo.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
