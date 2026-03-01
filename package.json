@@ -1,0 +1,34 @@
+{
+  "name": "arrastralo",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "report": "tsx scripts/report-submissions.ts"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.7.0",
+    "@neondatabase/serverless": "^0.10.4",
+    "@tanstack/react-query": "^5.66.11",
+    "drizzle-orm": "^0.39.1",
+    "hono": "^4.7.2",
+    "next": "15.2.2",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.30.4",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2"
+  }
+}
