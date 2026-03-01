@@ -183,7 +183,7 @@ export default function LandingPage() {
               <ul className="mt-4 space-y-2 text-sm sm:text-base text-foreground">
                 <li>• Tiempo promedio en recibir más de 5 ofertas: 28 minutos</li>
                 <li>• 87% de citas despachadas sin multas</li>
-                <li>• Solicita servicio de puerto a bodega sin interrupciones, sin cambio de unidad en patio</li>
+                <li>• Solicita servicio de puerto a almacén sin interrupciones, sin cambio de unidad en patio</li>
               </ul>
 
               <div className="mt-7 grid gap-4 sm:grid-cols-[1fr_.95fr] items-end">
