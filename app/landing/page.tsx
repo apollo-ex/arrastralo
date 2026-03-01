@@ -404,42 +404,51 @@ export default function LandingPage() {
       {/* ── WhatsApp notification mock ─────────────── */}
       <section className="px-4 sm:px-6 pb-10 sm:pb-12">
         <div className="max-w-[1100px] mx-auto">
-          <Card className="overflow-hidden border-warm-300/60">
+          <Card className="overflow-hidden border-0 bg-[#0b2252] text-white shadow-[0_16px_42px_rgba(11,34,82,.35)]">
             <CardContent className="p-6 sm:p-8">
-              <h3 className="font-display text-[clamp(1.4rem,3vw,2.2rem)] font-extrabold tracking-tight text-primary leading-tight">
-                Notificaciones por WhatsApp en tiempo real
+              <h3 className="font-display text-[clamp(1.4rem,3vw,2.2rem)] font-extrabold tracking-tight text-white leading-tight">
+                Monitoreo y notificaciones por WhatsApp en tiempo real
               </h3>
-              <p className="text-sm sm:text-base text-muted-foreground mt-3 max-w-[860px]">
-                Recibe alertas instantáneas del estatus de tu arrastre en WhatsApp. Ejemplo adaptado para
-                <b> Transportes Juan Gabriel SA de CV</b>, con cita, ubicación y acciones rápidas desde el chat.
+              <p className="text-sm sm:text-base text-blue-100 mt-3 max-w-[900px] leading-relaxed">
+                Recibe alertas instantáneas del estatus de tu arrastre con formato claro, acciones rápidas y evidencia operativa para
+                <b> Transportes Juan Gabriel SA de CV</b>.
               </p>
 
-              <div className="mt-5 grid gap-4 items-start">
-                <div className="rounded-xl border border-border bg-[#f8fafc] p-4 sm:p-5">
-                  <div className="rounded-lg bg-[#e7ffdb] border border-[#b7e3a1] p-3 sm:p-4 max-w-[540px]">
-                    <p className="text-[13px] leading-relaxed">
-                      <b>Tu arrastre fue asignado</b> a <b>Transportes Juan Gabriel SA de CV</b>
-                    </p>
-                    <p className="text-[13px] leading-relaxed mt-2">
-                      Ruta: Manzanillo, COL → Santa Catarina, NL
-                    </p>
-                    <p className="text-[13px] leading-relaxed mt-1">
-                      Contenedor: CMAU4221748 • 40HC
-                    </p>
-                    <p className="text-[13px] leading-relaxed mt-1">
-                      Cita de despacho: 24 Oct 10:00 CST (CONTECON)
-                    </p>
-                    <p className="text-[12px] text-muted-foreground mt-2">Hace 1 min</p>
-                    <div className="mt-3 flex flex-wrap gap-2">
-                      <span className="inline-flex items-center rounded border border-[#9ecf88] bg-white px-2 py-1 text-[11px] font-semibold text-emerald-700">Ver ubicación GPS</span>
-                      <span className="inline-flex items-center rounded border border-[#9ecf88] bg-white px-2 py-1 text-[11px] font-semibold text-emerald-700">Ver documentos</span>
-                      <span className="inline-flex items-center rounded border border-[#9ecf88] bg-white px-2 py-1 text-[11px] font-semibold text-emerald-700">Contactar operador</span>
-                    </div>
+              <div className="mt-6 rounded-2xl bg-[#07173a] border border-[#1a3f83] p-4 sm:p-5">
+                <div className="inline-flex rounded-full bg-[#0a2b63] p-1 gap-1 text-xs font-semibold mb-4">
+                  <span className="px-3 py-1 rounded-full text-blue-100">Ventas</span>
+                  <span className="px-3 py-1 rounded-full bg-gradient-to-r from-[#7c3aed] to-[#9333ea] text-white">Atención al cliente</span>
+                  <span className="px-3 py-1 rounded-full text-blue-100">Operaciones</span>
+                </div>
+
+                <div className="rounded-xl border border-[#1a3f83] bg-[#0b2a62] p-2.5 sm:p-3 flex flex-col sm:flex-row gap-2">
+                  <div className="flex-1 h-10 rounded-lg bg-[#072052] border border-[#214a93] px-3 flex items-center text-blue-100 text-sm">
+                    +52 8181234567
+                  </div>
+                  <button className="h-10 rounded-lg px-4 bg-gradient-to-r from-[#7c3aed] to-[#9333ea] text-white text-sm font-semibold">
+                    Enviar WhatsApp
+                  </button>
+                </div>
+
+                <div className="mt-4 grid gap-3 sm:grid-cols-[.9fr_1.1fr] items-start">
+                  <div className="text-white/90 text-sm leading-relaxed">
+                    <p className="font-semibold">Puede esperar alertas automáticas como estas en su teléfono:</p>
+                    <ul className="mt-2 space-y-1 text-blue-100 text-[13px]">
+                      <li>• Asignación de transportista</li>
+                      <li>• Salida de puerto y ETA a destino</li>
+                      <li>• Llegada a almacén</li>
+                      <li>• Retorno de vacío y cierre</li>
+                    </ul>
                   </div>
 
-                  <div className="mt-4 rounded-lg border border-border bg-white p-3 text-xs text-muted-foreground">
-                    Eventos automáticos en WhatsApp: asignación, salida de puerto, llegada a almacén,
-                    retorno de vacío y cierre con evidencia.
+                  <div className="rounded-xl bg-[#ece9df] border border-[#d3cec0] p-3 sm:p-4">
+                    <div className="rounded-lg bg-white p-3 text-[13px] text-[#1f2937] leading-relaxed shadow-sm">
+                      <p><b>Arrástralo:</b> Tu arrastre fue asignado a <b>Transportes Juan Gabriel SA de CV</b>.</p>
+                      <p className="mt-2">Ruta: Manzanillo, COL → Santa Catarina, NL</p>
+                      <p className="mt-1">Contenedor: CMAU4221748 • 40HC</p>
+                      <p className="mt-1">Cita de despacho: 24 Oct 10:00 CST (CONTECON)</p>
+                      <p className="mt-2 text-[#4b5563]">Solo responde a este mensaje para soporte 24/7.</p>
+                    </div>
                   </div>
                 </div>
               </div>
