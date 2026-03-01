@@ -35,7 +35,7 @@ export default function LandingPage() {
 
       {/* ── Hero ────────────────────────────────────── */}
       <section className="px-4 sm:px-6 pt-12 sm:pt-16 pb-12 bg-[radial-gradient(ellipse_700px_420px_at_0%_0%,rgba(194,65,12,.06),transparent),radial-gradient(ellipse_500px_320px_at_100%_60%,rgba(194,65,12,.04),transparent)]">
-        <div className="max-w-[1100px] mx-auto grid gap-8 lg:grid-cols-[1.3fr_.7fr] items-start">
+        <div className="max-w-[1100px] mx-auto grid gap-8 items-start">
           <div className="animate-fade-up">
             <Badge variant="accent" className="mb-5 text-[11px] tracking-widest uppercase">
               Marketplace de Arrastre Portuario
@@ -66,25 +66,7 @@ export default function LandingPage() {
             </div>
           </div>
 
-          <aside className="animate-fade-up-delay-1 bg-dark text-warm-50 rounded-lg p-6 sm:p-7 shadow-lg">
-            <h3 className="font-display text-base sm:text-lg font-bold mb-4 tracking-tight">
-              Todo en una sola plataforma
-            </h3>
-            <ul className="grid gap-3.5">
-              {[
-                [FileText, 'Documentos y facturación'],
-                [MapPin, 'GPS y visibilidad operativa'],
-                [Bell, 'Alertas por correo y WhatsApp'],
-                [Route, 'Estatus de punta a punta'],
-                [Gauge, 'Historial por proveedor y ruta'],
-              ].map(([Icon, text]) => (
-                <li key={text as string} className="flex items-center gap-3 text-sm text-warm-300">
-                  <Icon size={15} className="text-[#fed7aa] shrink-0" />
-                  {text as string}
-                </li>
-              ))}
-            </ul>
-          </aside>
+          <div />
         </div>
       </section>
 
@@ -180,6 +162,33 @@ export default function LandingPage() {
               </CardContent>
             </Card>
           ))}
+        </div>
+      </section>
+
+      {/* ── Platform features ───────────────────────── */}
+      <section className="px-4 sm:px-6 pb-10 sm:pb-12">
+        <div className="max-w-[1100px] mx-auto">
+          <Card className="bg-dark text-warm-50 border-0 shadow-lg">
+            <CardContent className="p-6 sm:p-7">
+              <h3 className="font-display text-base sm:text-lg font-bold mb-4 tracking-tight">
+                Todo en una sola plataforma
+              </h3>
+              <ul className="grid gap-3.5">
+                {[
+                  [FileText, 'Documentos y facturación'],
+                  [MapPin, 'GPS y visibilidad operativa'],
+                  [Bell, 'Alertas por correo y WhatsApp'],
+                  [Route, 'Estatus de punta a punta'],
+                  [Gauge, 'Historial por proveedor y ruta'],
+                ].map(([Icon, text]) => (
+                  <li key={text as string} className="flex items-center gap-3 text-sm text-warm-300">
+                    <Icon size={15} className="text-[#fed7aa] shrink-0" />
+                    {text as string}
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
