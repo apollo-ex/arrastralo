@@ -98,7 +98,7 @@ export default function LandingPage() {
                   certs: ['ISO 9001', 'Hazmat'],
                   eta: 'Cita de despacho: 24 de octubre a las 10:00 CST en CONTECON',
                   payment: 'Términos: 30 días',
-                  price: '$45,900 MXN',
+                  price: '$45,900 MXN + IVA',
                   score: '4.9',
                 },
                 {
@@ -109,7 +109,7 @@ export default function LandingPage() {
                   certs: ['CTPAT', 'OEA'],
                   eta: 'Cita de despacho: 24 de octubre a las 10:00 CST en CONTECON',
                   payment: 'Términos: Pago al retornar vacío',
-                  price: '$48,300 MXN',
+                  price: '$48,300 MXN + IVA',
                   score: '4.8',
                 },
                 {
@@ -120,7 +120,7 @@ export default function LandingPage() {
                   certs: ['ISO 28000'],
                   eta: 'Cita de despacho: 24 de octubre a las 10:00 CST en CONTECON',
                   payment: 'Términos: Pago inmediato',
-                  price: '$44,500 MXN',
+                  price: '$44,500 MXN + IVA',
                   score: '4.7',
                 },
                 {
