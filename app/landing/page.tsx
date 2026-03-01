@@ -200,7 +200,7 @@ export default function LandingPage() {
                   </div>
 
                   <div className="mt-4">
-                    <Button className="bg-primary text-primary-foreground">Presentar oferta: $4,100</Button>
+                    <Button className="bg-primary text-primary-foreground">Aceptar oferta: $45,000 + IVA</Button>
                   </div>
                 </div>
 
