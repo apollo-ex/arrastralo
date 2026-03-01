@@ -97,6 +97,7 @@ export default function LandingPage() {
                   equipment: 'Chasis 40’ • Caja seca',
                   certs: ['ISO 9001', 'Hazmat'],
                   eta: 'Recolecta hoy 14:00',
+                  payment: 'Términos: 30 días',
                   price: '$18,900 MXN',
                   score: '4.9',
                 },
@@ -107,6 +108,7 @@ export default function LandingPage() {
                   equipment: 'Chasis 20/40 • GPS activo',
                   certs: ['CTPAT', 'OEA'],
                   eta: 'Recolecta mañana 08:00',
+                  payment: 'Términos: Pago al retornar vacío',
                   price: '$19,300 MXN',
                   score: '4.8',
                 },
@@ -117,6 +119,7 @@ export default function LandingPage() {
                   equipment: 'Chasis 40’ • Custodia opcional',
                   certs: ['ISO 28000'],
                   eta: 'Recolecta hoy 18:00',
+                  payment: 'Términos: Pago inmediato',
                   price: '$18,500 MXN',
                   score: '4.7',
                 },
@@ -139,6 +142,7 @@ export default function LandingPage() {
                   <div className="sm:text-right flex sm:block items-center justify-between gap-3">
                     <div>
                       <div className="text-xs text-muted-foreground">{offer.eta}</div>
+                      <div className="text-xs text-muted-foreground mt-0.5">{offer.payment}</div>
                       <div className="font-display text-xl font-extrabold tracking-tight mt-1">{offer.price}</div>
                     </div>
                     <Button size="sm" className="shrink-0">Elegir oferta</Button>
