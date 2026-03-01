@@ -272,6 +272,19 @@ export default function LandingPage() {
           <div className="mt-7 rounded-[22px] border border-blue-100 bg-[#f5f8ff] p-3 sm:p-5 shadow-[0_10px_28px_rgba(30,64,175,.10)]">
             <Card className="rounded-[16px] border border-blue-100 bg-white shadow-none">
               <CardContent className="p-3 sm:p-4">
+                <div className="rounded-md border border-border bg-muted/20 p-2 sm:p-3 grid gap-2 sm:grid-cols-[1fr_1fr_1fr_1fr_auto] text-xs items-end">
+                  <div><span className="text-muted-foreground block mb-1">Tipo de equipo</span><div className="h-9 rounded border bg-background px-2 flex items-center">40HC</div></div>
+                  <div><span className="text-muted-foreground block mb-1">Origen</span><div className="h-9 rounded border bg-background px-2 flex items-center">Manzanillo, COL</div></div>
+                  <div><span className="text-muted-foreground block mb-1">Destino</span><div className="h-9 rounded border bg-background px-2 flex items-center">Santa Catarina, NL</div></div>
+                  <div><span className="text-muted-foreground block mb-1">Cruce</span><div className="h-9 rounded border bg-background px-2 flex items-center">N/A</div></div>
+                  <Button size="sm" className="h-9">Ver tarifas</Button>
+                </div>
+
+                <div className="text-center mt-4 mb-2">
+                  <h4 className="font-display text-xl font-extrabold tracking-tight">Manzanillo, COL → Santa Catarina, NL</h4>
+                  <p className="text-xs text-muted-foreground mt-1">Contenedor: CMAU4221748  |  Cita: 24 oct 10:00 CST  |  40HC</p>
+                </div>
+
                 <div className="grid gap-2 sm:grid-cols-4 text-xs">
                   <div className="rounded-md border border-border bg-muted/20 px-2 py-1.5">
                     <span className="text-muted-foreground">Origen</span>
