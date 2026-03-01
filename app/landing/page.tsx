@@ -25,20 +25,20 @@ export default function LandingPage() {
           <aside className={s.darkPanel}>
             <h3>Todo en una sola plataforma</h3>
             <ul>
-              <li>Documentos y facturación</li>
-              <li>GPS y visibilidad operativa</li>
-              <li>Alertas por correo y WhatsApp</li>
-              <li>Estatus de punta a punta</li>
-              <li>Historial por proveedor y ruta</li>
+              <li>📄 Documentos y facturación</li>
+              <li>📍 GPS y visibilidad operativa</li>
+              <li>🔔 Alertas por correo y WhatsApp</li>
+              <li>🔄 Estatus de punta a punta</li>
+              <li>📊 Historial por proveedor y ruta</li>
             </ul>
           </aside>
         </section>
 
         <section className={s.kpis}>
-          <div className={s.kpi}><small>Tiempo de cotización</small><strong>Minutos</strong></div>
-          <div className={s.kpi}><small>Canal</small><strong>Directo</strong></div>
-          <div className={s.kpi}><small>Operación</small><strong>Centralizada</strong></div>
-          <div className={s.kpi}><small>Modelo</small><strong>Sin intermediarios</strong></div>
+          <div className={s.kpi}><small>⏱ Tiempo de cotización</small><strong>Minutos</strong></div>
+          <div className={s.kpi}><small>🤝 Canal</small><strong>Directo</strong></div>
+          <div className={s.kpi}><small>🧭 Operación</small><strong>Centralizada</strong></div>
+          <div className={s.kpi}><small>✅ Modelo</small><strong>Sin intermediarios</strong></div>
         </section>
 
         <section id="como-funciona" className={s.card}>
