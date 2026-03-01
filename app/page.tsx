@@ -216,7 +216,7 @@ export default function Page() {
               </div>
               <div className="grid gap-1.5">
                 <Label htmlFor="deliveryCity">Codigo Postal entrega</Label>
-                <Input id="deliveryCity" value={deliveryCity} onChange={(e) => setDeliveryCity(e.target.value)} placeholder="Ej. Guadalajara" />
+                <Input id="deliveryCity" value={deliveryCity} onChange={(e) => setDeliveryCity(e.target.value)} placeholder="Ej: 66367 Santa Catarina" />
               </div>
             </div>
           ) : (
