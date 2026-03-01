@@ -259,63 +259,85 @@ export default function LandingPage() {
       {/* ── Rate trend mock ─────────────────────────── */}
       <section className="px-4 sm:px-6 pb-10 sm:pb-12">
         <div className="max-w-[1100px] mx-auto">
-          <Card className="overflow-hidden border-warm-300/60">
-            <CardContent className="p-6 sm:p-8">
-              <h3 className="font-display text-[clamp(1.4rem,3vw,2.2rem)] font-extrabold tracking-tight text-primary leading-tight">
-                Tendencia de tarifas en tiempo real
-              </h3>
-              <p className="text-sm sm:text-base text-muted-foreground mt-3 max-w-[830px]">
-                Manzanillo, COL → Santa Catarina, NL. Cotiza con datos de ofertas reales hechas en la plataforma y toma decisiones con mayor certeza de costo.
-              </p>
+          <div className="text-center max-w-[900px] mx-auto">
+            <h3 className="font-display text-[clamp(1.8rem,4.2vw,3.2rem)] font-extrabold tracking-tight text-blue-700 leading-[1.08]">
+              Accede a tarifas de mercado precisas para tu ruta
+            </h3>
+            <p className="text-sm sm:text-base text-muted-foreground mt-4 leading-relaxed">
+              Cotiza Manzanillo, COL → Santa Catarina, NL con datos reales de miles de ofertas validadas en Arrástralo.
+              Actualización semanal y disponibilidad inmediata para cotizar más rápido y proteger tu margen.
+            </p>
+          </div>
 
-              <div className="mt-6 rounded-xl border border-border bg-card p-4 sm:p-5">
+          <div className="mt-7 rounded-[22px] border border-blue-100 bg-[#f5f8ff] p-3 sm:p-5 shadow-[0_10px_28px_rgba(30,64,175,.10)]">
+            <Card className="rounded-[16px] border border-blue-100 bg-white shadow-none">
+              <CardContent className="p-3 sm:p-4">
                 <div className="grid gap-2 sm:grid-cols-4 text-xs">
-                  <div><span className="text-muted-foreground">Origen</span><p className="font-semibold">Manzanillo, COL</p></div>
-                  <div><span className="text-muted-foreground">Destino</span><p className="font-semibold">Santa Catarina, NL</p></div>
-                  <div><span className="text-muted-foreground">Contenedor</span><p className="font-semibold">40HC</p></div>
-                  <div><span className="text-muted-foreground">Muestra</span><p className="font-semibold">Últimas 12 semanas</p></div>
-                </div>
-
-                <div className="mt-5 grid gap-3 sm:grid-cols-3">
-                  <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-3">
-                    <p className="text-[11px] uppercase tracking-wide text-emerald-700 font-bold">Baja (P25)</p>
-                    <p className="font-display text-xl font-extrabold text-emerald-800">$43,200 + IVA</p>
+                  <div className="rounded-md border border-border bg-muted/20 px-2 py-1.5">
+                    <span className="text-muted-foreground">Origen</span>
+                    <p className="font-semibold">Manzanillo, COL</p>
                   </div>
-                  <div className="rounded-lg border border-blue-200 bg-blue-50 p-3">
-                    <p className="text-[11px] uppercase tracking-wide text-blue-700 font-bold">Mediana (P50)</p>
-                    <p className="font-display text-xl font-extrabold text-blue-800">$45,000 + IVA</p>
+                  <div className="rounded-md border border-border bg-muted/20 px-2 py-1.5">
+                    <span className="text-muted-foreground">Destino</span>
+                    <p className="font-semibold">Santa Catarina, NL</p>
                   </div>
-                  <div className="rounded-lg border border-amber-200 bg-amber-50 p-3">
-                    <p className="text-[11px] uppercase tracking-wide text-amber-700 font-bold">Alta (P75)</p>
-                    <p className="font-display text-xl font-extrabold text-amber-800">$48,700 + IVA</p>
+                  <div className="rounded-md border border-border bg-muted/20 px-2 py-1.5">
+                    <span className="text-muted-foreground">Contenedor</span>
+                    <p className="font-semibold">40HC</p>
+                  </div>
+                  <div className="rounded-md border border-border bg-muted/20 px-2 py-1.5">
+                    <span className="text-muted-foreground">Cita</span>
+                    <p className="font-semibold">24 Oct · 10:00 CST</p>
                   </div>
                 </div>
 
-                <div className="mt-5 rounded-lg border border-border bg-white p-4">
+                <div className="mt-4 rounded-lg border border-border p-3 sm:p-4">
+                  <div className="flex items-center justify-between gap-2">
+                    <p className="text-xs font-semibold text-muted-foreground">Rango de tarifa</p>
+                    <span className="text-[10px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 rounded px-2 py-0.5">Confianza alta</span>
+                  </div>
+                  <div className="mt-3 grid grid-cols-3 gap-2 text-center">
+                    <div>
+                      <p className="text-[11px] text-muted-foreground">Baja (P25)</p>
+                      <p className="font-display text-lg sm:text-xl font-extrabold">$43,200</p>
+                    </div>
+                    <div>
+                      <p className="text-[11px] text-muted-foreground">Media (P50)</p>
+                      <p className="font-display text-lg sm:text-xl font-extrabold">$45,000</p>
+                    </div>
+                    <div>
+                      <p className="text-[11px] text-muted-foreground">Alta (P75)</p>
+                      <p className="font-display text-lg sm:text-xl font-extrabold">$48,700</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-4 rounded-lg border border-border p-3 sm:p-4">
                   <p className="text-xs text-muted-foreground mb-2">Histórico de cotizaciones (12 semanas)</p>
-                  <div className="h-32 relative">
-                    <svg viewBox="0 0 600 140" className="w-full h-full">
-                      <line x1="20" y1="120" x2="580" y2="120" stroke="#cbd5e1" strokeWidth="1" />
-                      <line x1="20" y1="20" x2="20" y2="120" stroke="#cbd5e1" strokeWidth="1" />
-                      <polyline
-                        fill="none"
-                        stroke="#2563eb"
-                        strokeWidth="3"
-                        points="20,95 70,92 120,88 170,85 220,83 270,78 320,76 370,72 420,74 470,70 520,68 580,66"
-                      />
-                      <circle cx="580" cy="66" r="4" fill="#2563eb" />
+                  <div className="h-36 relative">
+                    <svg viewBox="0 0 600 150" className="w-full h-full">
+                      <defs>
+                        <linearGradient id="trendFill" x1="0" x2="0" y1="0" y2="1">
+                          <stop offset="0%" stopColor="#7dd3fc" stopOpacity="0.45" />
+                          <stop offset="100%" stopColor="#7dd3fc" stopOpacity="0.08" />
+                        </linearGradient>
+                      </defs>
+                      <line x1="24" y1="128" x2="580" y2="128" stroke="#cbd5e1" strokeWidth="1" />
+                      <line x1="24" y1="20" x2="24" y2="128" stroke="#cbd5e1" strokeWidth="1" />
+                      <path d="M24,88 L74,90 L124,87 L174,89 L224,85 L274,78 L324,74 L374,71 L424,73 L474,69 L524,67 L580,65 L580,128 L24,128 Z" fill="url(#trendFill)" />
+                      <polyline fill="none" stroke="#2563eb" strokeWidth="3" points="24,88 74,90 124,87 174,89 224,85 274,78 324,74 374,71 424,73 474,69 524,67 580,65" />
+                      <circle cx="580" cy="65" r="4" fill="#2563eb" />
                     </svg>
                   </div>
                   <div className="mt-2 text-[11px] text-muted-foreground flex flex-wrap gap-x-3 gap-y-1">
                     <span>Sem 1: $43,900</span>
                     <span>Sem 6: $45,000</span>
                     <span>Sem 12: $47,200</span>
-                    <span className="text-emerald-700 font-semibold">Confianza de mercado: Alta</span>
                   </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
