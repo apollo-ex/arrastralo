@@ -514,6 +514,8 @@ export default function LandingPage() {
                 'Configura reglas de precios para cotizar en automatico y tener mayor probabilidad de aumentar tus ventas',
                 'Reputación por desempeño te prioritiza ante los demás',
                 'Preferencia de arrastres en tu ciudad base de flotilla',
+                'Evita errores humanos, automatiza tus datos y genera información valiosa para reducir tiempos improductivos y aumentar la cantidad de viajes',
+                'Nuestro algoritmo de IA aprende en base a tu historial, cobertura asignada, distancias y tiempos recorridos para aumentar tu rentabilidad, facturacion y viajes por unidad crece sin invertir',
               ],
             },
           ].map(({ title, items }) => (
