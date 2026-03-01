@@ -1,0 +1,54 @@
+/* ── Reset ───────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Design Tokens ──────────────────────────────────── */
+:root {
+  --bg: #faf9f7;
+  --surface: #ffffff;
+  --text-primary: #1a1714;
+  --text-secondary: #6b6560;
+  --text-tertiary: #a39e99;
+  --border: #e8e5e1;
+  --border-strong: #d4d0cc;
+  --accent: #c2410c;
+  --accent-hover: #9a3412;
+  --accent-light: #fff7ed;
+  --accent-surface: #fed7aa;
+  --dark: #1a1714;
+  --dark-muted: #2d2925;
+  --success: #15803d;
+  --error: #dc2626;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --shadow-sm: 0 1px 2px rgba(26, 23, 20, 0.04);
+  --shadow-md: 0 4px 12px rgba(26, 23, 20, 0.07);
+  --shadow-lg: 0 12px 32px rgba(26, 23, 20, 0.09);
+}
+
+/* ── Base ────────────────────────────────────────────── */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; height: auto; }
+
+/* ── Keyframes ──────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
