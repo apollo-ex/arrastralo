@@ -125,6 +125,86 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* ── Importer offer mock ─────────────────────── */}
+      <section className="px-4 sm:px-6 py-10 sm:py-12">
+        <div className="max-w-[1100px] mx-auto">
+          <div className="mb-5">
+            <h2 className="font-display text-[clamp(1.3rem,3vw,2rem)] font-extrabold tracking-tight">
+              Vista de ofertas para importador
+            </h2>
+            <p className="text-sm sm:text-base text-muted-foreground mt-1">
+              Así se vería la comparación de transportistas en tiempo real para seleccionar la mejor opción.
+            </p>
+          </div>
+
+          <Card className="overflow-hidden border-warm-300/60">
+            <CardContent className="p-0">
+              <div className="grid grid-cols-1 sm:grid-cols-[1.2fr_.8fr] bg-warm-100 px-4 sm:px-5 py-3 border-b border-border text-[11px] sm:text-xs font-bold uppercase tracking-wider text-muted-foreground">
+                <span>Transportista / Servicio</span>
+                <span className="text-right">Oferta</span>
+              </div>
+
+              {[
+                {
+                  id: 'A1',
+                  carrier: 'Logística Regia',
+                  route: 'Manzanillo → 66367 Santa Catarina',
+                  equipment: 'Chasis 40’ • Caja seca',
+                  certs: ['ISO 9001', 'Hazmat'],
+                  eta: 'Recolecta hoy 14:00',
+                  price: '$18,900 MXN',
+                  score: '4.9',
+                },
+                {
+                  id: 'B4',
+                  carrier: 'Noreste Freight',
+                  route: 'Manzanillo → 66367 Santa Catarina',
+                  equipment: 'Chasis 20/40 • GPS activo',
+                  certs: ['CTPAT', 'OEA'],
+                  eta: 'Recolecta mañana 08:00',
+                  price: '$19,300 MXN',
+                  score: '4.8',
+                },
+                {
+                  id: 'C7',
+                  carrier: 'Pacific Drayage MX',
+                  route: 'Manzanillo → 66367 Santa Catarina',
+                  equipment: 'Chasis 40’ • Custodia opcional',
+                  certs: ['ISO 28000'],
+                  eta: 'Recolecta hoy 18:00',
+                  price: '$18,500 MXN',
+                  score: '4.7',
+                },
+              ].map((offer) => (
+                <div key={offer.id} className="grid grid-cols-1 sm:grid-cols-[1.2fr_.8fr] gap-3 px-4 sm:px-5 py-4 border-b last:border-b-0 border-border hover:bg-warm-100/60 transition-colors">
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <span className="inline-flex items-center justify-center px-2 py-0.5 rounded bg-warm-100 text-primary text-[10px] font-bold">{offer.id}</span>
+                      <strong className="font-display text-base tracking-tight">{offer.carrier}</strong>
+                      <span className="text-xs text-muted-foreground">★ {offer.score}</span>
+                    </div>
+                    <p className="text-sm text-muted-foreground mt-1">{offer.route}</p>
+                    <p className="text-xs text-muted-foreground mt-1">{offer.equipment}</p>
+                    <div className="flex flex-wrap gap-1.5 mt-2">
+                      {offer.certs.map((c) => (
+                        <span key={c} className="text-[10px] font-semibold rounded px-2 py-0.5 bg-[#fff7ed] text-primary border border-warm-300/70">{c}</span>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="sm:text-right flex sm:block items-center justify-between gap-3">
+                    <div>
+                      <div className="text-xs text-muted-foreground">{offer.eta}</div>
+                      <div className="font-display text-xl font-extrabold tracking-tight mt-1">{offer.price}</div>
+                    </div>
+                    <Button size="sm" className="shrink-0">Elegir oferta</Button>
+                  </div>
+                </div>
+              ))}
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* ── Audiences ───────────────────────────────── */}
       <section className="px-4 sm:px-6 py-12 sm:py-14">
         <div className="max-w-[1100px] mx-auto grid gap-4 md:grid-cols-2">
