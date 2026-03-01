@@ -500,6 +500,10 @@ export default function LandingPage() {
               items: [
                 'No dejes al azar tu arrastre, te damos acceso a nuestra red de transportistas validados y recibe multiples ofertas para escoger la mejor',
                 'Ofrecemos lineas de credito, seguro de carga, maniobras y personal para descarga incluyendo renta de montacargas, contrata a tu necesidad y haz tu operacion más eficiente',
+                'Sin intermediarios, comunicación directa con la línea de transporte',
+                'Visibilidad en tiempo real con GPS',
+                'Sube tus documentos y configura alertas por correo o WhatsApp',
+                'Centraliza todo flujo del arrastre en una misma plataforma',
               ],
             },
             {
