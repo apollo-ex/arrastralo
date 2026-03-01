@@ -414,17 +414,7 @@ export default function LandingPage() {
                 <b> Transportes Juan Gabriel SA de CV</b>, con cita, ubicación y acciones rápidas desde el chat.
               </p>
 
-              <div className="mt-5 grid gap-4 lg:grid-cols-[.8fr_1.2fr] items-start">
-                <div className="rounded-xl border border-border bg-card p-2 sm:p-3">
-                  <Image
-                    src="/whatsapp-notif-reference.jpg"
-                    alt="Referencia de formato WhatsApp"
-                    width={900}
-                    height={1600}
-                    className="w-full h-auto rounded-lg border border-border"
-                  />
-                </div>
-
+              <div className="mt-5 grid gap-4 items-start">
                 <div className="rounded-xl border border-border bg-[#f8fafc] p-4 sm:p-5">
                   <div className="rounded-lg bg-[#e7ffdb] border border-[#b7e3a1] p-3 sm:p-4 max-w-[540px]">
                     <p className="text-[13px] leading-relaxed">
