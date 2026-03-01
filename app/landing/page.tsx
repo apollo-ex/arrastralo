@@ -443,6 +443,7 @@ export default function LandingPage() {
                       <p className="mt-1">Contenedor: CMAU4221748 • 40HC</p>
                       <p className="mt-1">Cita de despacho: 24 Oct 10:00 CST (CONTECON)</p>
                       <p className="mt-2"><a href="#" className="text-blue-600 underline">URL de rastreo</a></p>
+                      <p className="mt-1">ETA: 25 Oct 14:00 (17hrs 32min a llegada)</p>
                     </div>
                   </div>
                 </div>
