@@ -420,7 +420,7 @@ export default function LandingPage() {
                   <div className="flex-1 h-10 rounded-lg bg-[#072052] border border-[#214a93] px-3 flex items-center text-blue-100 text-sm">
                     +52 8181234567
                   </div>
-                  <button className="h-10 rounded-lg px-4 bg-gradient-to-r from-[#7c3aed] to-[#9333ea] text-white text-sm font-semibold">
+                  <button className="h-10 rounded-lg px-4 bg-[#25D366] hover:bg-[#1ebe5d] text-white text-sm font-semibold transition-colors">
                     Enviar WhatsApp
                   </button>
                 </div>
