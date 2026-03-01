@@ -327,19 +327,40 @@ export default function LandingPage() {
 
                 <div className="mt-4 rounded-lg border border-border p-3 sm:p-4">
                   <p className="text-xs text-muted-foreground mb-2">Histórico de cotizaciones (12 semanas)</p>
-                  <div className="h-36 relative">
-                    <svg viewBox="0 0 600 150" className="w-full h-full">
+                  <div className="h-40 relative">
+                    <svg viewBox="0 0 600 170" className="w-full h-full">
                       <defs>
                         <linearGradient id="trendFill" x1="0" x2="0" y1="0" y2="1">
                           <stop offset="0%" stopColor="#7dd3fc" stopOpacity="0.45" />
                           <stop offset="100%" stopColor="#7dd3fc" stopOpacity="0.08" />
                         </linearGradient>
                       </defs>
-                      <line x1="24" y1="128" x2="580" y2="128" stroke="#cbd5e1" strokeWidth="1" />
-                      <line x1="24" y1="20" x2="24" y2="128" stroke="#cbd5e1" strokeWidth="1" />
-                      <path d="M24,88 L74,90 L124,87 L174,89 L224,85 L274,78 L324,74 L374,71 L424,73 L474,69 L524,67 L580,65 L580,128 L24,128 Z" fill="url(#trendFill)" />
-                      <polyline fill="none" stroke="#2563eb" strokeWidth="3" points="24,88 74,90 124,87 174,89 224,85 274,78 324,74 374,71 424,73 474,69 524,67 580,65" />
+
+                      {/* Grid + Y axis */}
+                      <line x1="56" y1="128" x2="580" y2="128" stroke="#cbd5e1" strokeWidth="1" />
+                      <line x1="56" y1="96" x2="580" y2="96" stroke="#e2e8f0" strokeWidth="1" />
+                      <line x1="56" y1="64" x2="580" y2="64" stroke="#e2e8f0" strokeWidth="1" />
+                      <line x1="56" y1="32" x2="580" y2="32" stroke="#e2e8f0" strokeWidth="1" />
+                      <line x1="56" y1="20" x2="56" y2="128" stroke="#cbd5e1" strokeWidth="1" />
+
+                      {/* Y labels */}
+                      <text x="8" y="132" fontSize="10" fill="#64748b">$40,000</text>
+                      <text x="8" y="100" fontSize="10" fill="#64748b">$43,000</text>
+                      <text x="8" y="68" fontSize="10" fill="#64748b">$46,000</text>
+                      <text x="8" y="36" fontSize="10" fill="#64748b">$49,000</text>
+
+                      {/* Trend */}
+                      <path d="M56,88 L104,90 L152,87 L200,89 L248,85 L296,78 L344,74 L392,71 L440,73 L488,69 L536,67 L580,65 L580,128 L56,128 Z" fill="url(#trendFill)" />
+                      <polyline fill="none" stroke="#2563eb" strokeWidth="3" points="56,88 104,90 152,87 200,89 248,85 296,78 344,74 392,71 440,73 488,69 536,67 580,65" />
                       <circle cx="580" cy="65" r="4" fill="#2563eb" />
+
+                      {/* X labels */}
+                      <text x="56" y="150" fontSize="10" fill="#64748b">Sem 1</text>
+                      <text x="152" y="150" fontSize="10" fill="#64748b">Sem 3</text>
+                      <text x="248" y="150" fontSize="10" fill="#64748b">Sem 5</text>
+                      <text x="344" y="150" fontSize="10" fill="#64748b">Sem 7</text>
+                      <text x="440" y="150" fontSize="10" fill="#64748b">Sem 9</text>
+                      <text x="528" y="150" fontSize="10" fill="#64748b">Sem 11</text>
                     </svg>
                   </div>
                   <div className="mt-2 text-[11px] text-muted-foreground flex flex-wrap gap-x-3 gap-y-1">
