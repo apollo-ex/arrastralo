@@ -445,6 +445,17 @@ export default function LandingPage() {
                       <p className="mt-2"><a href="#" className="text-blue-600 underline">URL de rastreo</a></p>
                       <p className="mt-1">ETA: 25 Oct 14:00 (17hrs 32min a llegada)</p>
                     </div>
+
+                    <div className="rounded-lg bg-white p-3 text-[13px] text-[#1f2937] leading-relaxed shadow-sm mt-3">
+                      <p>Aquí tienes el packaging list del contenedor</p>
+                      <div className="mt-2 rounded-lg border border-border bg-[#f8fafc] p-2.5 flex items-center gap-3">
+                        <span className="inline-flex items-center justify-center w-8 h-8 rounded bg-red-600 text-white text-[10px] font-bold">PDF</span>
+                        <div>
+                          <p className="font-medium leading-tight">BXN202511050104-Packaging Details.pdf</p>
+                          <p className="text-[11px] text-muted-foreground">6 pages • 2.3 MB • pdf</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
