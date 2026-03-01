@@ -116,7 +116,7 @@ export default function LandingPage() {
                   id: 'C7',
                   carrier: 'Pacific Drayage MX',
                   route: 'Manzanillo → 66367 Santa Catarina',
-                  equipment: 'Chasis 40’ • Custodia opcional',
+                  equipment: 'Contenedor: CMAU4221748 • Tamaño y Tipo: 40HC',
                   certs: ['ISO 28000', 'Cambio de Unidad en Patio'],
                   eta: 'Cita de despacho: 24 de octubre a las 10:00 CST en CONTECON',
                   payment: 'Términos: Pago inmediato',
@@ -143,7 +143,13 @@ export default function LandingPage() {
                       <span className="text-xs text-amber-500">★ {offer.score}</span>
                     </div>
                     <p className="text-sm text-muted-foreground mt-1">{offer.route}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{offer.equipment}</p>
+                    {offer.equipment.includes('Contenedor:') ? (
+                      <span className="inline-block mt-1 text-[10px] font-semibold rounded px-2 py-1 bg-violet-100 text-violet-800 border border-violet-300">
+                        {offer.equipment}
+                      </span>
+                    ) : (
+                      <p className="text-xs text-muted-foreground mt-1">{offer.equipment}</p>
+                    )}
                     <div className="flex flex-wrap gap-1.5 mt-2">
                       {offer.certs.map((c) => (
                         <span
