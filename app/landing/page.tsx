@@ -207,7 +207,14 @@ export default function LandingPage() {
                 </div>
 
                 <div className="rounded-xl bg-white border border-border p-4 sm:p-5 shadow-lg">
-                  <p className="font-display text-primary text-lg font-extrabold tracking-tight">Contraoferta: $40,000</p>
+                  <div className="space-y-1">
+                    <label className="text-xs font-semibold text-muted-foreground">Contraoferta</label>
+                    <input
+                      value="$40,000"
+                      readOnly
+                      className="w-full h-10 rounded-md border border-border bg-background px-3 text-sm font-semibold text-foreground"
+                    />
+                  </div>
                   <p className="text-sm text-muted-foreground mt-2">Acepte esta tarifa o envíe una contraoferta en respuesta.</p>
                   <p className="text-[11px] text-muted-foreground mt-2">El valor de la contraoferta no debe superar +/- 9.5%</p>
                   <div className="mt-4 flex gap-2">
