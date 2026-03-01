@@ -46,6 +46,25 @@ const mxStates = [
   'Zacatecas'
 ]
 
+const mxPorts = [
+  'Manzanillo',
+  'Lázaro Cárdenas',
+  'Veracruz',
+  'Altamira',
+  'Ensenada',
+  'Tuxpan',
+  'Progreso',
+  'Mazatlán',
+  'Guaymas',
+  'Topolobampo',
+  'Salina Cruz',
+  'Coatzacoalcos',
+  'Tampico',
+  'Puerto Chiapas',
+  'Dos Bocas',
+  'Acapulco'
+]
+
 function MultiDate({ value, onChange }: { value: string[]; onChange: (v: string[]) => void }) {
   const [candidate, setCandidate] = useState('')
   return (
@@ -209,7 +228,7 @@ export default function Page() {
               </div>
               <div className="grid sm:grid-cols-2 gap-3">
                 <div className="grid gap-1.5">
-                  <Label htmlFor="originStates">Origen (estados)</Label>
+                  <Label htmlFor="originStates">Puertos Origen</Label>
                   <select
                     id="originStates"
                     className="flex w-full rounded-md border border-input bg-card p-2 text-[15px] text-foreground min-h-[100px] focus-visible:outline-none focus-visible:border-primary focus-visible:ring-[3px] focus-visible:ring-primary/10"
@@ -217,7 +236,7 @@ export default function Page() {
                     value={originStates}
                     onChange={(e) => setOriginStates(Array.from(e.target.selectedOptions).map((o) => o.value))}
                   >
-                    {mxStates.map((st) => <option key={st}>{st}</option>)}
+                    {mxPorts.map((p) => <option key={p}>{p}</option>)}
                   </select>
                 </div>
                 <div className="grid gap-1.5">
