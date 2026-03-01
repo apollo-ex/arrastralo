@@ -167,7 +167,10 @@ export default function LandingPage() {
                       <div className="text-xs text-muted-foreground mt-0.5">{offer.payment}</div>
                       <div className="font-display text-xl font-extrabold tracking-tight mt-1">{offer.price}</div>
                     </div>
-                    <Button size="sm" className="shrink-0">Elegir oferta</Button>
+                    <div className="sm:text-right">
+                      <button className="text-sm font-semibold text-blue-600 hover:text-blue-700 underline underline-offset-2 mb-1">Ver Detalles</button>
+                      <Button size="sm" className="shrink-0">Elegir oferta</Button>
+                    </div>
                   </div>
                 </div>
               ))}
