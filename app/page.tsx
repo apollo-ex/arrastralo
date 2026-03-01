@@ -240,7 +240,7 @@ export default function Page() {
                   </select>
                 </div>
                 <div className="grid gap-1.5">
-                  <Label htmlFor="destStates">Destino (estados)</Label>
+                  <Label htmlFor="destStates">Cobertura Destinos (Estados)</Label>
                   <select
                     id="destStates"
                     className="flex w-full rounded-md border border-input bg-card p-2 text-[15px] text-foreground min-h-[100px] focus-visible:outline-none focus-visible:border-primary focus-visible:ring-[3px] focus-visible:ring-primary/10"
