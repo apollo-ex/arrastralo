@@ -229,12 +229,29 @@ export default function Page() {
               </div>
               <div className="grid gap-1.5">
                 <Label htmlFor="phone">Celular</Label>
-                <Input id="phone" required value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="+52 ..." />
+                <Input
+                  id="phone"
+                  required
+                  inputMode="numeric"
+                  pattern="[0-9]{10,15}"
+                  title="Ingresa solo números (10 a 15 dígitos)"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value.replace(/\D/g, ''))}
+                  placeholder="Ej. 8181234567"
+                />
               </div>
             </div>
             <div className="grid gap-1.5">
               <Label htmlFor="city">Ciudad</Label>
-              <Input id="city" required value={city} onChange={(e) => setCity(e.target.value)} placeholder="Ej. Monterrey" />
+              <Input
+                id="city"
+                required
+                pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{2,}"
+                title="Ingresa solo letras y espacios"
+                value={city}
+                onChange={(e) => setCity(e.target.value.replace(/[^A-Za-zÁÉÍÓÚáéíóúÑñ ]/g, ''))}
+                placeholder="Ej. Monterrey"
+              />
             </div>
           </div>
 
