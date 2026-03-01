@@ -121,7 +121,7 @@ export default function Page() {
   const [originStates, setOriginStates] = useState<string[]>([])
   const [destinationStates, setDestinationStates] = useState<string[]>([])
   const [paymentTerms, setPaymentTerms] = useState<'7_days' | '15_days' | '30_days' | 'immediate'>('15_days')
-  const [pricingMode, setPricingMode] = useState<'auto' | 'manual'>('manual')
+
 
   const mutation = useCreateSubmission()
   const title = useMemo(() => (role === 'importer' ? 'Solicitud de arrastre' : 'Registro de transportista'), [role])
@@ -209,7 +209,7 @@ export default function Page() {
         <form
           onSubmit={(e) => {
             e.preventDefault()
-            mutation.mutate({ role, email, phone, city, port, haulDates, deliveryCity, fleetBaseCity, originStates, destinationStates, paymentTerms, pricingMode })
+            mutation.mutate({ role, email, phone, city, port, haulDates, deliveryCity, fleetBaseCity, originStates, destinationStates, paymentTerms })
           }}
         >
           {/* Contact section */}
@@ -298,13 +298,7 @@ export default function Page() {
                     <option value="immediate">Inmediato</option>
                   </SelectField>
                 </div>
-                <div className="grid gap-1.5">
-                  <Label htmlFor="pricingMode">Modo de cotización</Label>
-                  <SelectField id="pricingMode" value={pricingMode} onChange={(e) => setPricingMode(e.target.value as typeof pricingMode)}>
-                    <option value="manual">Manual</option>
-                    <option value="auto">Automática</option>
-                  </SelectField>
-                </div>
+
               </div>
             </div>
           )}
