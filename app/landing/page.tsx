@@ -427,7 +427,7 @@ export default function LandingPage() {
 
                 <div className="mt-4 grid gap-3 sm:grid-cols-[.9fr_1.1fr] items-start">
                   <div className="text-white/90 text-sm leading-relaxed">
-                    <p className="font-semibold">Puede esperar alertas automáticas como estas en su teléfono:</p>
+                    <p className="font-semibold">Configura alertas automáticas y comparte a tus colaboradores:</p>
                     <ul className="mt-2 space-y-1 text-blue-100 text-[13px]">
                       <li>• Asignación de transportista</li>
                       <li>• Salida de puerto y ETA a destino</li>
