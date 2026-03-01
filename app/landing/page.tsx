@@ -264,8 +264,8 @@ export default function LandingPage() {
               Accede a tarifas de mercado precisas para tu ruta
             </h3>
             <p className="text-sm sm:text-base text-muted-foreground mt-4 leading-relaxed">
-              Cotiza Manzanillo, COL → Santa Catarina, NL con datos reales de miles de ofertas validadas en Arrástralo.
-              Actualización semanal y disponibilidad inmediata para cotizar más rápido y proteger tu margen.
+              Acceda a tarifas precisas del mercado. Cotice arrastres con datos de miles de ofertas verificadas en el mercado.
+              Actualizaciones semanales y disponibilidad instantánea para que pueda tener certeza en su estimacion de costos en destino final, proyecciones financieras y cuidar sus margenes.
             </p>
           </div>
 
