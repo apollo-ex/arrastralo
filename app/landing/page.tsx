@@ -188,10 +188,17 @@ export default function LandingPage() {
 
               <div className="mt-7 grid gap-4 sm:grid-cols-[1fr_.95fr] items-end">
                 <div className="rounded-xl bg-[#1f2433] text-[#e5e7eb] p-4 sm:p-5 shadow-lg">
-                  <p className="font-semibold text-sm">Monterrey, NLE → Chattanooga, TN</p>
-                  <p className="text-xs text-[#cbd5e1] mt-1">Recogida: 24 de octubre a las 10:00 CST</p>
-                  <p className="text-xs text-[#cbd5e1] mt-1">Dy Van • 472 millas • 40,000 lb • Repuestos para automóviles</p>
-                  <span className="inline-block text-[10px] mt-2 rounded px-2 py-1 bg-[#334155]">Transportador CTPAT</span>
+                  <span className="inline-block text-[10px] mb-2 rounded px-2 py-1 bg-[#334155]">Contenedor: CMAU4221748</span>
+                  <p className="font-semibold text-sm">Manzanillo, COL → Santa Catarina, NL</p>
+                  <p className="text-xs text-[#cbd5e1] mt-1">Cita de despacho: 24 de octubre a las 10:00 CST en CONTECON</p>
+                  <p className="text-xs text-[#cbd5e1] mt-1">Tamaño y Tipo: 40HC</p>
+
+                  <div className="mt-3 border-t border-[#334155] pt-3 text-xs text-[#cbd5e1] space-y-1">
+                    <p><span className="text-[#94a3b8]">Razón Social:</span> Transportes Juan Gabriel SA de CV</p>
+                    <p><span className="text-[#94a3b8]">RFC:</span> JGA980604VMZ</p>
+                    <p><span className="text-[#94a3b8]">CAAT:</span> 100i</p>
+                  </div>
+
                   <div className="mt-4">
                     <Button className="bg-primary text-primary-foreground">Presentar oferta: $4,100</Button>
                   </div>
