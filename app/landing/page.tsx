@@ -10,7 +10,10 @@ export default function LandingPage() {
     <main className={s.page}>
       <div className={s.shell}>
         <header className={s.topbar}>
-          <span className={s.pill}>Arrástralo • Marketplace de Arrastre Portuario</span>
+          <div className={s.brandLeft}>
+            <Image src="/arrastralo-logo-transparent.png" alt="Arrástralo" width={170} height={50} className={s.logoSmall} />
+            <span className={s.pill}>Marketplace de Arrastre Portuario</span>
+          </div>
           <div className={s.toplinks}>
             <Link href="/" className={`${s.btn} ${s.secondary}`}>Solicita acceso</Link>
           </div>
@@ -18,7 +21,7 @@ export default function LandingPage() {
 
         <section className={`${s.card} ${s.hero}`}>
           <div>
-            <Image src="/arrastralo-logo.jpg" alt="Logo Arrástralo" width={500} height={180} style={{ width: '100%', maxWidth: 420, height: 'auto', marginBottom: 10 }} />
+            <Image src="/arrastralo-logo-transparent.png" alt="Logo Arrástralo" width={500} height={180} style={{ width: '100%', maxWidth: 420, height: 'auto', marginBottom: 10 }} />
             <h1 className={s.title}>Sin intermediarios en arrastre portuario.</h1>
             <p className={s.lead}>Comunicación directa con la línea de transporte, cotización rápida y operación completa en una sola plataforma.</p>
             <p className={s.tagline}><b>Arrástralo:</b> menos fricción, más ejecución.</p>

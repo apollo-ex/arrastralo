@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
 import { useCreateSubmission } from '@/lib/hooks'
@@ -49,7 +50,9 @@ export default function Page() {
     <main className={s.page}>
       <div className={s.shell}>
         <div className={s.top}>
-          <h1 className={s.brand}>Arrástralo</h1>
+          <div style={{display:'flex',alignItems:'center',gap:10}}>
+            <Image src="/arrastralo-logo-transparent.png" alt="Arrástralo" width={150} height={48} style={{width:130,height:'auto'}} />
+          </div>
           <Link className={s.link} href="/landing">Conoce cómo funciona</Link>
         </div>
         <p className={s.sub}>Sin intermediarios, comunicación directa con la línea de transporte.</p>
