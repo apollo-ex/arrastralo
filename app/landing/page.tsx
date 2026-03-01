@@ -1,5 +1,9 @@
+import Image from 'next/image'
 import Link from 'next/link'
+import { Bell, Clock3, FileText, Gauge, Handshake, MapPinned, Route, ShieldCheck } from 'lucide-react'
 import s from './landing.module.css'
+
+const iconStyle = { width: 16, height: 16, marginRight: 8, verticalAlign: 'text-bottom' } as const
 
 export default function LandingPage() {
   return (
@@ -14,6 +18,7 @@ export default function LandingPage() {
 
         <section className={`${s.card} ${s.hero}`}>
           <div>
+            <Image src="/arrastralo-logo.jpg" alt="Logo Arrástralo" width={500} height={180} style={{ width: '100%', maxWidth: 420, height: 'auto', marginBottom: 10 }} />
             <h1 className={s.title}>Sin intermediarios en arrastre portuario.</h1>
             <p className={s.lead}>Comunicación directa con la línea de transporte, cotización rápida y operación completa en una sola plataforma.</p>
             <p className={s.tagline}><b>Arrástralo:</b> menos fricción, más ejecución.</p>
@@ -25,20 +30,20 @@ export default function LandingPage() {
           <aside className={s.darkPanel}>
             <h3>Todo en una sola plataforma</h3>
             <ul>
-              <li>📄 Documentos y facturación</li>
-              <li>📍 GPS y visibilidad operativa</li>
-              <li>🔔 Alertas por correo y WhatsApp</li>
-              <li>🔄 Estatus de punta a punta</li>
-              <li>📊 Historial por proveedor y ruta</li>
+              <li><FileText style={iconStyle} />Documentos y facturación</li>
+              <li><MapPinned style={iconStyle} />GPS y visibilidad operativa</li>
+              <li><Bell style={iconStyle} />Alertas por correo y WhatsApp</li>
+              <li><Route style={iconStyle} />Estatus de punta a punta</li>
+              <li><Gauge style={iconStyle} />Historial por proveedor y ruta</li>
             </ul>
           </aside>
         </section>
 
         <section className={s.kpis}>
-          <div className={s.kpi}><small>⏱ Tiempo de cotización</small><strong>Minutos</strong></div>
-          <div className={s.kpi}><small>🤝 Canal</small><strong>Directo</strong></div>
-          <div className={s.kpi}><small>🧭 Operación</small><strong>Centralizada</strong></div>
-          <div className={s.kpi}><small>✅ Modelo</small><strong>Sin intermediarios</strong></div>
+          <div className={s.kpi}><small><Clock3 style={iconStyle} />Tiempo de cotización</small><strong>Minutos</strong></div>
+          <div className={s.kpi}><small><Handshake style={iconStyle} />Canal</small><strong>Directo</strong></div>
+          <div className={s.kpi}><small><Route style={iconStyle} />Operación</small><strong>Centralizada</strong></div>
+          <div className={s.kpi}><small><ShieldCheck style={iconStyle} />Modelo</small><strong>Sin intermediarios</strong></div>
         </section>
 
         <section id="como-funciona" className={s.card}>
