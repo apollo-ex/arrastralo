@@ -211,7 +211,7 @@ export default function Page() {
                 </SelectField>
               </div>
               <div className="grid gap-1.5">
-                <Label>Días de arrastre</Label>
+                <Label>Fecha(s) tentantiva(s) cita de despacho en aduana</Label>
                 <MultiDate value={haulDates} onChange={setHaulDates} />
               </div>
               <div className="grid gap-1.5">
