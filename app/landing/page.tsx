@@ -524,7 +524,7 @@ export default function LandingPage() {
               <CardContent>
                 <ul className="grid gap-3">
                   {items.map((item) => (
-                    <li key={item} className="relative pl-4 text-sm text-muted-foreground leading-relaxed before:content-[''] before:absolute before:left-0 before:top-[7px] before:size-1.5 before:rounded-full before:bg-primary">
+                    <li key={item} className="relative pl-4 text-sm text-muted-foreground leading-relaxed before:content-[''] before:absolute before:left-0 before:top-[7px] before:size-1.5 before:rounded-full before:bg-emerald-500">
                       {item}
                     </li>
                   ))}
