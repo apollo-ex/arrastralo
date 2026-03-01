@@ -175,14 +175,15 @@ export default function LandingPage() {
           <Card className="overflow-hidden border-warm-300/60">
             <CardContent className="p-6 sm:p-8">
               <h3 className="font-display text-[clamp(1.4rem,3vw,2.2rem)] font-extrabold tracking-tight text-primary leading-tight">
-                Reserva tu carga más rápido, 24 horas al día, 7 días a la semana 24/7
+                Reserva tu arrastre más rápido, 24 horas al día, 7 días a la semana 24/7
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground mt-4 max-w-[780px]">
-                Una cobertura más rápida significa que usted puede concentrarse en construir relaciones y resolver problemas.
+                Conseguir un transportista rápidamente significa un contenedor desaduanado sin complicaciones.
               </p>
               <ul className="mt-4 space-y-2 text-sm sm:text-base text-foreground">
-                <li>• Tiempo medio de partida: 38 minutos</li>
-                <li>• 83% de amonestaciones sin contacto</li>
+                <li>• Tiempo promedio en recibir más de 5 ofertas: 28 minutos</li>
+                <li>• 87% de citas despachadas sin multas</li>
+                <li>• Solicita servicio de puerto a bodega sin interrupciones, sin cambio de unidad en patio</li>
               </ul>
 
               <div className="mt-7 grid gap-4 sm:grid-cols-[1fr_.95fr] items-end">
