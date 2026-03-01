@@ -169,6 +169,47 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* ── Counteroffer / speed mock ───────────────── */}
+      <section className="px-4 sm:px-6 pb-10 sm:pb-12">
+        <div className="max-w-[1100px] mx-auto">
+          <Card className="overflow-hidden border-warm-300/60">
+            <CardContent className="p-6 sm:p-8">
+              <h3 className="font-display text-[clamp(1.4rem,3vw,2.2rem)] font-extrabold tracking-tight text-primary leading-tight">
+                Reserva tu carga más rápido, 24 horas al día, 7 días a la semana 24/7
+              </h3>
+              <p className="text-sm sm:text-base text-muted-foreground mt-4 max-w-[780px]">
+                Una cobertura más rápida significa que usted puede concentrarse en construir relaciones y resolver problemas.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm sm:text-base text-foreground">
+                <li>• Tiempo medio de partida: 38 minutos</li>
+                <li>• 83% de amonestaciones sin contacto</li>
+              </ul>
+
+              <div className="mt-7 grid gap-4 sm:grid-cols-[1fr_.95fr] items-end">
+                <div className="rounded-xl bg-[#1f2433] text-[#e5e7eb] p-4 sm:p-5 shadow-lg">
+                  <p className="font-semibold text-sm">Monterrey, NLE → Chattanooga, TN</p>
+                  <p className="text-xs text-[#cbd5e1] mt-1">Recogida: 24 de octubre a las 10:00 CST</p>
+                  <p className="text-xs text-[#cbd5e1] mt-1">Dy Van • 472 millas • 40,000 lb • Repuestos para automóviles</p>
+                  <span className="inline-block text-[10px] mt-2 rounded px-2 py-1 bg-[#334155]">Transportador CTPAT</span>
+                  <div className="mt-4">
+                    <Button className="bg-primary text-primary-foreground">Presentar oferta: $4,100</Button>
+                  </div>
+                </div>
+
+                <div className="rounded-xl bg-white border border-border p-4 sm:p-5 shadow-lg">
+                  <p className="font-display text-primary text-lg font-extrabold tracking-tight">Contraoferta: $3,800</p>
+                  <p className="text-sm text-muted-foreground mt-2">Acepte esta tarifa o envíe una contraoferta en respuesta.</p>
+                  <div className="mt-4 flex gap-2">
+                    <Button variant="secondary" className="flex-1">Encimera</Button>
+                    <Button className="flex-1">Aceptar: $3,800</Button>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* ── Platform features ───────────────────────── */}
       <section className="px-4 sm:px-6 pb-10 sm:pb-12">
         <div className="max-w-[1100px] mx-auto">
