@@ -234,11 +234,11 @@ export default function LandingPage() {
                     <input
                       value="$40,000"
                       readOnly
-                      className="w-full h-10 rounded-md border border-border bg-background px-3 text-sm font-semibold text-foreground"
+                      className="w-full h-10 rounded-md border border-red-300 bg-red-50 px-3 text-sm font-semibold text-red-700"
                     />
                   </div>
                   <p className="text-sm text-muted-foreground mt-2">Acepte esta tarifa o envíe una contraoferta en respuesta.</p>
-                  <p className="text-[11px] text-muted-foreground mt-2">El valor de la contraoferta no debe superar +/- 9.5%</p>
+                  <p className="text-[11px] text-red-600 mt-2 font-medium">El valor de la contraoferta no debe superar +/- 9.5%</p>
                   <div className="mt-4 flex gap-2">
                     <Button variant="secondary" className="flex-1">Contraofertar</Button>
                     <Button className="flex-1">Aceptar: $45,000 + IVA</Button>
