@@ -57,7 +57,7 @@ export default function LandingPage() {
             <div className="flex flex-col sm:flex-row gap-3 mt-8">
               <Button size="lg" asChild>
                 <Link href="/">
-                  Solicita acceso al piloto <ArrowRight className="size-4" />
+                  Solicita acceso <ArrowRight className="size-4" />
                 </Link>
               </Button>
               <Button variant="secondary" size="lg" asChild>
