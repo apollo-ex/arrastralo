@@ -11,7 +11,40 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 
 const ports = ['Manzanillo', 'Veracruz', 'Altamira', 'Lázaro Cárdenas']
-const mxStates = ['Colima', 'Jalisco', 'Nuevo León', 'CDMX', 'Puebla', 'Querétaro', 'EdoMex', 'Veracruz']
+const mxStates = [
+  'Aguascalientes',
+  'Baja California',
+  'Baja California Sur',
+  'Campeche',
+  'Chiapas',
+  'Chihuahua',
+  'Ciudad de México',
+  'Coahuila',
+  'Colima',
+  'Durango',
+  'Estado de México',
+  'Guanajuato',
+  'Guerrero',
+  'Hidalgo',
+  'Jalisco',
+  'Michoacán',
+  'Morelos',
+  'Nayarit',
+  'Nuevo León',
+  'Oaxaca',
+  'Puebla',
+  'Querétaro',
+  'Quintana Roo',
+  'San Luis Potosí',
+  'Sinaloa',
+  'Sonora',
+  'Tabasco',
+  'Tamaulipas',
+  'Tlaxcala',
+  'Veracruz',
+  'Yucatán',
+  'Zacatecas'
+]
 
 function MultiDate({ value, onChange }: { value: string[]; onChange: (v: string[]) => void }) {
   const [candidate, setCandidate] = useState('')
