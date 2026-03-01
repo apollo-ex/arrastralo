@@ -215,7 +215,7 @@ export default function Page() {
                 <MultiDate value={haulDates} onChange={setHaulDates} />
               </div>
               <div className="grid gap-1.5">
-                <Label htmlFor="deliveryCity">Ciudad de entrega</Label>
+                <Label htmlFor="deliveryCity">Codigo Postal entrega</Label>
                 <Input id="deliveryCity" value={deliveryCity} onChange={(e) => setDeliveryCity(e.target.value)} placeholder="Ej. Guadalajara" />
               </div>
             </div>
