@@ -128,7 +128,7 @@ export default function LandingPage() {
                   carrier: 'Transportes Juan Gabriel SA de CV',
                   route: 'Manzanillo → 66367 Santa Catarina',
                   equipment: 'Contenedor: CMAU4221748 • Tamaño y Tipo: 40HC',
-                  certs: ['RFC: JGA980604VMZ', 'CAAT: 100i'],
+                  certs: ['Local; Base en Manzanillo', 'CAAT: 100i'],
                   eta: 'Cita de despacho: 24 de octubre a las 10:00 CST en CONTECON',
                   payment: 'Términos: 30 días',
                   price: '$45,000 MXN + IVA',
@@ -146,7 +146,12 @@ export default function LandingPage() {
                     <p className="text-xs text-muted-foreground mt-1">{offer.equipment}</p>
                     <div className="flex flex-wrap gap-1.5 mt-2">
                       {offer.certs.map((c) => (
-                        <span key={c} className="text-[10px] font-semibold rounded px-2 py-0.5 bg-[#fff7ed] text-primary border border-warm-300/70">{c}</span>
+                        <span
+                          key={c}
+                          className={`text-[10px] font-semibold rounded px-2 py-0.5 border ${c.includes('Local') ? 'bg-emerald-50 text-emerald-700 border-emerald-300' : 'bg-[#fff7ed] text-primary border-warm-300/70'}`}
+                        >
+                          {c}
+                        </span>
                       ))}
                     </div>
                   </div>
