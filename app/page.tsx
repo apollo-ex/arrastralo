@@ -2,7 +2,8 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useMemo, useState } from 'react'
+import Script from 'next/script'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useCreateSubmission } from '@/lib/hooks'
 import type { Role } from '@/lib/types'
 import { ArrowLeft, ArrowRight, Check, Truck, Package } from 'lucide-react'
@@ -125,8 +126,36 @@ export default function Page() {
   const mutation = useCreateSubmission()
   const title = useMemo(() => (role === 'importer' ? 'Solicitud de arrastre' : 'Registro de transportista'), [role])
 
+  const mapsKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
+  const deliveryInputRef = useRef<HTMLInputElement | null>(null)
+
+  useEffect(() => {
+    if (!mapsKey) return
+    const g = (window as any).google
+    if (!g?.maps?.places || !deliveryInputRef.current || role !== 'importer') return
+
+    const autocomplete = new g.maps.places.Autocomplete(deliveryInputRef.current, {
+      componentRestrictions: { country: 'mx' },
+      fields: ['formatted_address', 'address_components'],
+      types: ['geocode']
+    })
+
+    autocomplete.addListener('place_changed', () => {
+      const place = autocomplete.getPlace()
+      const formatted = place?.formatted_address || deliveryInputRef.current?.value || ''
+      setDeliveryCity(formatted)
+    })
+  }, [mapsKey, role])
+
   return (
     <main className="min-h-screen bg-background">
+      {mapsKey && (
+        <Script
+          id="gmaps-places"
+          src={`https://maps.googleapis.com/maps/api/js?key=${mapsKey}&libraries=places`}
+          strategy="afterInteractive"
+        />
+      )}
       {/* ── Nav ─────────────────────────────────────── */}
       <nav className="bg-background/82 backdrop-blur-xl border-b border-border">
         <div className="max-w-[620px] mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
@@ -216,7 +245,12 @@ export default function Page() {
               </div>
               <div className="grid gap-1.5">
                 <Label htmlFor="deliveryCity">Codigo Postal entrega</Label>
-                <Input id="deliveryCity" value={deliveryCity} onChange={(e) => setDeliveryCity(e.target.value)} placeholder="Ej: 66367 Santa Catarina" />
+                <Input id="deliveryCity" ref={deliveryInputRef} value={deliveryCity} onChange={(e) => setDeliveryCity(e.target.value)} placeholder="Ej: 66367 Santa Catarina" autoComplete="off" />
+                {mapsKey ? (
+                  <span className="text-xs text-muted-foreground">Autocompletado por Google (México)</span>
+                ) : (
+                  <span className="text-xs text-muted-foreground">Captura manual por código postal + ciudad</span>
+                )}
               </div>
             </div>
           ) : (
