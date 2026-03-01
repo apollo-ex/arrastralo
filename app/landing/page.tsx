@@ -24,7 +24,7 @@ export default function LandingPage() {
       {/* ── Nav ─────────────────────────────────────── */}
       <nav className="sticky top-0 z-50 bg-background/82 backdrop-blur-xl border-b border-border">
         <div className="max-w-[1100px] mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
-          <Image src="/arrastralo-logo-transparent.png" alt="Arrástralo" width={140} height={44} className="w-[100px] sm:w-[120px] h-auto" />
+          <Image src="/arrastralo-logo-transparent.png" alt="Arrástralo" width={240} height={76} className="w-[150px] sm:w-[190px] h-auto" />
           <Button variant="dark" size="sm" asChild>
             <Link href="/">
               Solicita acceso <ArrowRight className="size-3.5" />
