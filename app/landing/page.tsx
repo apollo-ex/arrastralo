@@ -98,7 +98,7 @@ export default function LandingPage() {
                   certs: ['ISO 9001', 'Hazmat'],
                   eta: 'Recolecta hoy 14:00',
                   payment: 'Términos: 30 días',
-                  price: '$18,900 MXN',
+                  price: '$45,900 MXN',
                   score: '4.9',
                 },
                 {
@@ -109,7 +109,7 @@ export default function LandingPage() {
                   certs: ['CTPAT', 'OEA'],
                   eta: 'Recolecta mañana 08:00',
                   payment: 'Términos: Pago al retornar vacío',
-                  price: '$19,300 MXN',
+                  price: '$48,300 MXN',
                   score: '4.8',
                 },
                 {
@@ -120,7 +120,7 @@ export default function LandingPage() {
                   certs: ['ISO 28000'],
                   eta: 'Recolecta hoy 18:00',
                   payment: 'Términos: Pago inmediato',
-                  price: '$18,500 MXN',
+                  price: '$44,500 MXN',
                   score: '4.7',
                 },
               ].map((offer) => (
