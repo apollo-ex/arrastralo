@@ -14,6 +14,8 @@ const submissionSchema = z.object({
   port: z.string().optional(),
   deliveryCity: z.string().optional(),
   haulDates: z.array(z.string()).optional(),
+  emptyReturnTo: z.enum(['Puerto', 'Ciudad destino']).optional(),
+  hazardousCargo: z.enum(['Si', 'No']).optional(),
   fleetBaseCity: z.string().optional(),
   originStates: z.array(z.string()).optional(),
   destinationStates: z.array(z.string()).optional(),

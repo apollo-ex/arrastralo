@@ -117,6 +117,7 @@ export default function Page() {
   const [haulDates, setHaulDates] = useState<string[]>([])
   const [deliveryCity, setDeliveryCity] = useState('')
   const [emptyReturnTo, setEmptyReturnTo] = useState<'Puerto' | 'Ciudad destino'>('Puerto')
+  const [hazardousCargo, setHazardousCargo] = useState<'Si' | 'No'>('No')
 
   const [fleetBaseCity, setFleetBaseCity] = useState('')
   const [originStates, setOriginStates] = useState<string[]>([])
@@ -216,7 +217,7 @@ export default function Page() {
         <form
           onSubmit={(e) => {
             e.preventDefault()
-            mutation.mutate({ role, email, phone, city, port, haulDates, deliveryCity, fleetBaseCity, originStates, destinationStates, paymentTerms })
+            mutation.mutate({ role, email, phone, city, port, haulDates, deliveryCity, emptyReturnTo, hazardousCargo, fleetBaseCity, originStates, destinationStates, paymentTerms })
           }}
         >
           {/* Contact section */}
@@ -283,6 +284,13 @@ export default function Page() {
                 <SelectField id="emptyReturnTo" value={emptyReturnTo} onChange={(e) => setEmptyReturnTo(e.target.value as 'Puerto' | 'Ciudad destino')}>
                   <option value="Puerto">Puerto</option>
                   <option value="Ciudad destino">Ciudad destino</option>
+                </SelectField>
+              </div>
+              <div className="grid gap-1.5">
+                <Label htmlFor="hazardousCargo">Carga Peligrosa</Label>
+                <SelectField id="hazardousCargo" value={hazardousCargo} onChange={(e) => setHazardousCargo(e.target.value as 'Si' | 'No')}>
+                  <option value="Si">Si</option>
+                  <option value="No">No</option>
                 </SelectField>
               </div>
             </div>
