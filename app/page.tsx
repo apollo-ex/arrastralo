@@ -49,8 +49,8 @@ export default function Page() {
     <main className={s.page}>
       <div className={s.shell}>
         <div className={s.top}>
-          <h1 className={s.brand}>Arrástralo MVP</h1>
-          <Link className={s.link} href="/landing">Ver landing comercial</Link>
+          <h1 className={s.brand}>Arrástralo</h1>
+          <Link className={s.link} href="/landing">Conoce cómo funciona</Link>
         </div>
         <p className={s.sub}>Sin intermediarios, comunicación directa con la línea de transporte.</p>
 

@@ -8,8 +8,7 @@ export default function LandingPage() {
         <header className={s.topbar}>
           <span className={s.pill}>Arrástralo • Marketplace de Arrastre Portuario</span>
           <div className={s.toplinks}>
-            <Link href="/landing/classic">Versión clásica</Link>
-            <Link href="/" className={`${s.btn} ${s.secondary}`}>Ir al MVP operativo</Link>
+            <Link href="/" className={`${s.btn} ${s.secondary}`}>Solicita acceso</Link>
           </div>
         </header>
 

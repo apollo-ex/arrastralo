@@ -5,7 +5,7 @@ export default function LandingPage() {
     <main style={{ maxWidth: 920, margin: '0 auto', padding: 24, fontFamily: 'system-ui' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h1>Arrástralo</h1>
-        <Link href="/">Ir al MVP operativo</Link>
+        <Link href="/">Solicita acceso</Link>
       </div>
       <p><b>Arrástralo: menos fricción, más ejecución.</b></p>
       <p>Sin intermediarios, comunicación directa con la línea de transporte.</p>
