@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useMemo, useState } from 'react'
 import { useCreateSubmission } from '@/lib/hooks'
 import type { Role } from '@/lib/types'
@@ -48,7 +49,10 @@ export default function Page() {
 
   return (
     <main style={{ maxWidth: 880, margin: '0 auto', padding: 24, fontFamily: 'system-ui' }}>
-      <h1>Arrástralo MVP</h1>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
+        <h1 style={{ margin: 0 }}>Arrástralo MVP</h1>
+        <Link href="/landing">Ver landing comercial</Link>
+      </div>
       <p>Sin intermediarios, comunicación directa con la línea de transporte.</p>
 
       <div style={{ marginBottom: 16 }}>
