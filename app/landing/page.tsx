@@ -401,6 +401,63 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* ── WhatsApp notification mock ─────────────── */}
+      <section className="px-4 sm:px-6 pb-10 sm:pb-12">
+        <div className="max-w-[1100px] mx-auto">
+          <Card className="overflow-hidden border-warm-300/60">
+            <CardContent className="p-6 sm:p-8">
+              <h3 className="font-display text-[clamp(1.4rem,3vw,2.2rem)] font-extrabold tracking-tight text-primary leading-tight">
+                Notificaciones por WhatsApp en tiempo real
+              </h3>
+              <p className="text-sm sm:text-base text-muted-foreground mt-3 max-w-[860px]">
+                Recibe alertas instantáneas del estatus de tu arrastre en WhatsApp. Ejemplo adaptado para
+                <b> Transportes Juan Gabriel SA de CV</b>, con cita, ubicación y acciones rápidas desde el chat.
+              </p>
+
+              <div className="mt-5 grid gap-4 lg:grid-cols-[.8fr_1.2fr] items-start">
+                <div className="rounded-xl border border-border bg-card p-2 sm:p-3">
+                  <Image
+                    src="/whatsapp-notif-reference.jpg"
+                    alt="Referencia de formato WhatsApp"
+                    width={900}
+                    height={1600}
+                    className="w-full h-auto rounded-lg border border-border"
+                  />
+                </div>
+
+                <div className="rounded-xl border border-border bg-[#f8fafc] p-4 sm:p-5">
+                  <div className="rounded-lg bg-[#e7ffdb] border border-[#b7e3a1] p-3 sm:p-4 max-w-[540px]">
+                    <p className="text-[13px] leading-relaxed">
+                      <b>Tu arrastre fue asignado</b> a <b>Transportes Juan Gabriel SA de CV</b>
+                    </p>
+                    <p className="text-[13px] leading-relaxed mt-2">
+                      Ruta: Manzanillo, COL → Santa Catarina, NL
+                    </p>
+                    <p className="text-[13px] leading-relaxed mt-1">
+                      Contenedor: CMAU4221748 • 40HC
+                    </p>
+                    <p className="text-[13px] leading-relaxed mt-1">
+                      Cita de despacho: 24 Oct 10:00 CST (CONTECON)
+                    </p>
+                    <p className="text-[12px] text-muted-foreground mt-2">Hace 1 min</p>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      <span className="inline-flex items-center rounded border border-[#9ecf88] bg-white px-2 py-1 text-[11px] font-semibold text-emerald-700">Ver ubicación GPS</span>
+                      <span className="inline-flex items-center rounded border border-[#9ecf88] bg-white px-2 py-1 text-[11px] font-semibold text-emerald-700">Ver documentos</span>
+                      <span className="inline-flex items-center rounded border border-[#9ecf88] bg-white px-2 py-1 text-[11px] font-semibold text-emerald-700">Contactar operador</span>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 rounded-lg border border-border bg-white p-3 text-xs text-muted-foreground">
+                    Eventos automáticos en WhatsApp: asignación, salida de puerto, llegada a almacén,
+                    retorno de vacío y cierre con evidencia.
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* ── Platform features ───────────────────────── */}
       <section className="px-4 sm:px-6 pb-10 sm:pb-12">
         <div className="max-w-[1100px] mx-auto">
