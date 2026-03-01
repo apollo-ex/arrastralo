@@ -256,6 +256,69 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* ── Rate trend mock ─────────────────────────── */}
+      <section className="px-4 sm:px-6 pb-10 sm:pb-12">
+        <div className="max-w-[1100px] mx-auto">
+          <Card className="overflow-hidden border-warm-300/60">
+            <CardContent className="p-6 sm:p-8">
+              <h3 className="font-display text-[clamp(1.4rem,3vw,2.2rem)] font-extrabold tracking-tight text-primary leading-tight">
+                Tendencia de tarifas en tiempo real
+              </h3>
+              <p className="text-sm sm:text-base text-muted-foreground mt-3 max-w-[830px]">
+                Manzanillo, COL → Santa Catarina, NL. Cotiza con datos de ofertas reales hechas en la plataforma y toma decisiones con mayor certeza de costo.
+              </p>
+
+              <div className="mt-6 rounded-xl border border-border bg-card p-4 sm:p-5">
+                <div className="grid gap-2 sm:grid-cols-4 text-xs">
+                  <div><span className="text-muted-foreground">Origen</span><p className="font-semibold">Manzanillo, COL</p></div>
+                  <div><span className="text-muted-foreground">Destino</span><p className="font-semibold">Santa Catarina, NL</p></div>
+                  <div><span className="text-muted-foreground">Contenedor</span><p className="font-semibold">40HC</p></div>
+                  <div><span className="text-muted-foreground">Muestra</span><p className="font-semibold">Últimas 12 semanas</p></div>
+                </div>
+
+                <div className="mt-5 grid gap-3 sm:grid-cols-3">
+                  <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-3">
+                    <p className="text-[11px] uppercase tracking-wide text-emerald-700 font-bold">Baja (P25)</p>
+                    <p className="font-display text-xl font-extrabold text-emerald-800">$43,200 + IVA</p>
+                  </div>
+                  <div className="rounded-lg border border-blue-200 bg-blue-50 p-3">
+                    <p className="text-[11px] uppercase tracking-wide text-blue-700 font-bold">Mediana (P50)</p>
+                    <p className="font-display text-xl font-extrabold text-blue-800">$45,000 + IVA</p>
+                  </div>
+                  <div className="rounded-lg border border-amber-200 bg-amber-50 p-3">
+                    <p className="text-[11px] uppercase tracking-wide text-amber-700 font-bold">Alta (P75)</p>
+                    <p className="font-display text-xl font-extrabold text-amber-800">$48,700 + IVA</p>
+                  </div>
+                </div>
+
+                <div className="mt-5 rounded-lg border border-border bg-white p-4">
+                  <p className="text-xs text-muted-foreground mb-2">Histórico de cotizaciones (12 semanas)</p>
+                  <div className="h-32 relative">
+                    <svg viewBox="0 0 600 140" className="w-full h-full">
+                      <line x1="20" y1="120" x2="580" y2="120" stroke="#cbd5e1" strokeWidth="1" />
+                      <line x1="20" y1="20" x2="20" y2="120" stroke="#cbd5e1" strokeWidth="1" />
+                      <polyline
+                        fill="none"
+                        stroke="#2563eb"
+                        strokeWidth="3"
+                        points="20,95 70,92 120,88 170,85 220,83 270,78 320,76 370,72 420,74 470,70 520,68 580,66"
+                      />
+                      <circle cx="580" cy="66" r="4" fill="#2563eb" />
+                    </svg>
+                  </div>
+                  <div className="mt-2 text-[11px] text-muted-foreground flex flex-wrap gap-x-3 gap-y-1">
+                    <span>Sem 1: $43,900</span>
+                    <span>Sem 6: $45,000</span>
+                    <span>Sem 12: $47,200</span>
+                    <span className="text-emerald-700 font-semibold">Confianza de mercado: Alta</span>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* ── Platform features ───────────────────────── */}
       <section className="px-4 sm:px-6 pb-10 sm:pb-12">
         <div className="max-w-[1100px] mx-auto">
