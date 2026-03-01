@@ -7,7 +7,7 @@ export default function LandingPage() {
         <h1>Arrástralo</h1>
         <Link href="/">Solicita acceso</Link>
       </div>
-      <p><b>Arrástralo: menos fricción, más ejecución.</b></p>
+      <p><b>Arrástralo: menos congestión, más ejecución.</b></p>
       <p>Sin intermediarios, comunicación directa con la línea de transporte.</p>
 
       <section style={{ border: '1px solid #ddd', borderRadius: 10, padding: 16, marginTop: 12 }}>

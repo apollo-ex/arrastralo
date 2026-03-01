@@ -48,7 +48,7 @@ export default function LandingPage() {
               y operación completa en una sola plataforma.
             </p>
             <p className="text-sm sm:text-base text-muted-foreground mt-2">
-              <strong className="text-foreground">Arrástralo:</strong> menos fricción, más ejecución.
+              <strong className="text-foreground">Arrástralo:</strong> menos congestión, más ejecución.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mt-8">
               <Button size="lg" asChild>
