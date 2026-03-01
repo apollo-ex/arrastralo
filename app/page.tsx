@@ -124,7 +124,13 @@ export default function Page() {
 
 
   const mutation = useCreateSubmission()
-  const title = useMemo(() => (role === 'importer' ? 'Solicitud de arrastre' : 'Registro de transportista'), [role])
+  const title = useMemo(
+    () =>
+      role === 'importer'
+        ? 'Envia tu requerimiento a nuestra red seleccionada de transportistas, compara precios y selecciona la oferta más adecuada para tu operación'
+        : 'Registro de transportista',
+    [role]
+  )
 
   const mapsKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
   const deliveryInputRef = useRef<HTMLInputElement | null>(null)
@@ -173,11 +179,11 @@ export default function Page() {
           <h1 className="font-display text-2xl sm:text-3xl font-extrabold tracking-tight leading-tight mb-2">
             {title}
           </h1>
-          <p className="text-sm sm:text-base text-muted-foreground">
-            {role === 'carrier'
-              ? 'No te preocupes por vender, consigue viajes de inmediato y genera nuevos clientes.'
-              : 'Sin intermediarios, comunicación directa con la línea de transporte.'}
-          </p>
+          {role === 'carrier' && (
+            <p className="text-sm sm:text-base text-muted-foreground">
+              No te preocupes por vender, consigue viajes de inmediato y genera nuevos clientes.
+            </p>
+          )}
         </div>
 
         {/* Role toggle */}
