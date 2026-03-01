@@ -174,7 +174,9 @@ export default function Page() {
             {title}
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground">
-            Sin intermediarios, comunicación directa con la línea de transporte.
+            {role === 'carrier'
+              ? 'No te preocupes por vender, consigue viajes de inmediato y genera nuevos clientes.'
+              : 'Sin intermediarios, comunicación directa con la línea de transporte.'}
           </p>
         </div>
 
