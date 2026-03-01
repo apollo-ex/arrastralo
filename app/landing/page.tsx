@@ -508,9 +508,10 @@ export default function LandingPage() {
               title: 'Para transportistas',
               items: [
                 'Más cargas recurrentes y menos tiempo ocioso',
-                'Pago más rápido y trazable',
-                'Facturación y documentación desde la app',
-                'Badge de compañía local por desempeño',
+                'Recibe tu pago más rapido',
+                'Configura reglas de precios para cotizar en automatico y tener mayor probabilidad de aumentar tus ventas',
+                'Reputación por desempeño te prioritiza ante los demás',
+                'Preferencia de arrastres en tu ciudad base de flotilla',
               ],
             },
           ].map(({ title, items }) => (
