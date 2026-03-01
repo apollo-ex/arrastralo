@@ -407,7 +407,7 @@ export default function LandingPage() {
           <Card className="overflow-hidden border-0 bg-[#0b2252] text-white shadow-[0_16px_42px_rgba(11,34,82,.35)]">
             <CardContent className="p-6 sm:p-8">
               <h3 className="font-display text-[clamp(1.4rem,3vw,2.2rem)] font-extrabold tracking-tight text-white leading-tight">
-                Monitoreo y notificaciones por WhatsApp en tiempo real
+                Configura notificaciones por WhatsApp
               </h3>
               <p className="text-sm sm:text-base text-blue-100 mt-3 max-w-[900px] leading-relaxed">
                 Recibe alertas instantáneas del estatus de tu arrastre con formato claro, acciones rápidas y evidencia operativa para
