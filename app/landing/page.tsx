@@ -442,7 +442,7 @@ export default function LandingPage() {
                       <p className="mt-2">Ruta: Manzanillo, COL → Santa Catarina, NL</p>
                       <p className="mt-1">Contenedor: CMAU4221748 • 40HC</p>
                       <p className="mt-1">Cita de despacho: 24 Oct 10:00 CST (CONTECON)</p>
-                      <p className="mt-2 text-[#4b5563]">Solo responde a este mensaje para soporte 24/7.</p>
+                      <p className="mt-2"><a href="#" className="text-blue-600 underline">URL de rastreo</a></p>
                     </div>
                   </div>
                 </div>
