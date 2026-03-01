@@ -415,11 +415,6 @@ export default function LandingPage() {
               </p>
 
               <div className="mt-6 rounded-2xl bg-[#07173a] border border-[#1a3f83] p-4 sm:p-5">
-                <div className="inline-flex rounded-full bg-[#0a2b63] p-1 gap-1 text-xs font-semibold mb-4">
-                  <span className="px-3 py-1 rounded-full text-blue-100">Ventas</span>
-                  <span className="px-3 py-1 rounded-full bg-gradient-to-r from-[#7c3aed] to-[#9333ea] text-white">Atención al cliente</span>
-                  <span className="px-3 py-1 rounded-full text-blue-100">Operaciones</span>
-                </div>
 
                 <div className="rounded-xl border border-[#1a3f83] bg-[#0b2a62] p-2.5 sm:p-3 flex flex-col sm:flex-row gap-2">
                   <div className="flex-1 h-10 rounded-lg bg-[#072052] border border-[#214a93] px-3 flex items-center text-blue-100 text-sm">
