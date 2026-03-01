@@ -43,13 +43,17 @@ export default function LandingPage() {
             <h1 className="font-display text-[clamp(2rem,5.5vw,3.6rem)] font-extrabold leading-[1.02] tracking-[-0.035em] text-foreground mb-4 sm:mb-5">
               Sin intermediarios<br />en arrastre portuario.
             </h1>
-            <p className="text-base sm:text-lg text-muted-foreground max-w-[500px] leading-relaxed">
-              Comunicación directa con la línea de transporte, cotización rápida
-              y operación completa en una sola plataforma.
+            <p className="text-base sm:text-lg text-muted-foreground max-w-[620px] leading-relaxed">
+              Publica una vez. Recibe varias ofertas. Reserva al instante.
             </p>
-            <p className="text-sm sm:text-base text-muted-foreground mt-2">
-              <strong className="text-foreground">Arrástralo:</strong> menos congestión, más ejecución.
+            <p className="text-sm sm:text-base text-muted-foreground mt-2 max-w-[650px] leading-relaxed">
+              Arrástralo prioriza tu carga entre los transportistas que han indicado específicamente que desean esa ruta, tipo de equipo y puerto.
             </p>
+            <ul className="mt-2 text-sm sm:text-base text-muted-foreground leading-relaxed list-disc pl-5 space-y-1 max-w-[650px]">
+              <li>Elige entre varias ofertas.</li>
+              <li>Consulta el equipo y las certificaciones de cada transportista.</li>
+              <li>Los transportistas reciben alertas instantáneas y responden rápidamente.</li>
+            </ul>
             <div className="flex flex-col sm:flex-row gap-3 mt-8">
               <Button size="lg" asChild>
                 <Link href="/">
