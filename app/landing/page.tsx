@@ -106,7 +106,7 @@ export default function LandingPage() {
                   carrier: 'Noreste Freight',
                   route: 'Manzanillo → 66367 Santa Catarina',
                   equipment: 'Chasis 20/40 • GPS activo',
-                  certs: ['CTPAT', 'OEA'],
+                  certs: ['CTPAT', 'OEA', 'Arrastre Directo desde Aduana'],
                   eta: 'Cita de despacho: 24 de octubre a las 10:00 CST en CONTECON',
                   payment: 'Términos: Pago al retornar vacío',
                   price: '$48,300 MXN + IVA',
@@ -148,7 +148,7 @@ export default function LandingPage() {
                       {offer.certs.map((c) => (
                         <span
                           key={c}
-                          className={`text-[10px] font-semibold rounded px-2 py-0.5 border ${c.includes('Local') ? 'bg-emerald-50 text-emerald-700 border-emerald-300' : c.includes('Cambio de Unidad') ? 'bg-amber-100 text-amber-800 border-amber-300' : 'bg-[#fff7ed] text-primary border-warm-300/70'}`}
+                          className={`text-[10px] font-semibold rounded px-2 py-0.5 border ${c.includes('Local') || c.includes('Arrastre Directo') ? 'bg-emerald-50 text-emerald-700 border-emerald-300' : c.includes('Cambio de Unidad') ? 'bg-amber-100 text-amber-800 border-amber-300' : 'bg-[#fff7ed] text-primary border-warm-300/70'}`}
                         >
                           {c}
                         </span>
