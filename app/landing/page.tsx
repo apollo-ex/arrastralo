@@ -375,6 +375,32 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* ── GPS monitoring mock ─────────────────────── */}
+      <section className="px-4 sm:px-6 pb-10 sm:pb-12">
+        <div className="max-w-[1100px] mx-auto">
+          <Card className="overflow-hidden border-warm-300/60">
+            <CardContent className="p-6 sm:p-8">
+              <h3 className="font-display text-[clamp(1.4rem,3vw,2.2rem)] font-extrabold tracking-tight text-primary leading-tight">
+                Monitoreo GPS en Tiempo Real
+              </h3>
+              <p className="text-sm sm:text-base text-muted-foreground mt-3 max-w-[850px]">
+                Visualiza la ubicación exacta de cada unidad durante el arrastre desde puerto hasta destino final, con eventos de movimiento y estatus operativo en tiempo real.
+              </p>
+
+              <div className="mt-5 rounded-xl border border-border bg-card p-2 sm:p-3">
+                <Image
+                  src="/gps-monitoring-manzanillo.jpg"
+                  alt="Monitoreo GPS en tiempo real de unidad en Manzanillo"
+                  width={1600}
+                  height={1200}
+                  className="w-full h-auto rounded-lg border border-border"
+                />
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* ── Platform features ───────────────────────── */}
       <section className="px-4 sm:px-6 pb-10 sm:pb-12">
         <div className="max-w-[1100px] mx-auto">
