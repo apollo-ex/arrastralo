@@ -207,7 +207,7 @@ export default function LandingPage() {
                 </div>
 
                 <div className="rounded-xl bg-white border border-border p-4 sm:p-5 shadow-lg">
-                  <p className="font-display text-primary text-lg font-extrabold tracking-tight">Contraoferta: $3,800</p>
+                  <p className="font-display text-primary text-lg font-extrabold tracking-tight">Contraoferta: $40,000</p>
                   <p className="text-sm text-muted-foreground mt-2">Acepte esta tarifa o envíe una contraoferta en respuesta.</p>
                   <div className="mt-4 flex gap-2">
                     <Button variant="secondary" className="flex-1">Encimera</Button>
