@@ -96,7 +96,7 @@ export default function LandingPage() {
                   route: 'Manzanillo → 66367 Santa Catarina',
                   equipment: 'Chasis 40’ • Caja seca',
                   certs: ['ISO 9001', 'Hazmat'],
-                  eta: 'Recolecta hoy 14:00',
+                  eta: 'Cita de despacho: 24 de octubre a las 10:00 CST en CONTECON',
                   payment: 'Términos: 30 días',
                   price: '$45,900 MXN',
                   score: '4.9',
@@ -107,7 +107,7 @@ export default function LandingPage() {
                   route: 'Manzanillo → 66367 Santa Catarina',
                   equipment: 'Chasis 20/40 • GPS activo',
                   certs: ['CTPAT', 'OEA'],
-                  eta: 'Recolecta mañana 08:00',
+                  eta: 'Cita de despacho: 24 de octubre a las 10:00 CST en CONTECON',
                   payment: 'Términos: Pago al retornar vacío',
                   price: '$48,300 MXN',
                   score: '4.8',
@@ -118,10 +118,21 @@ export default function LandingPage() {
                   route: 'Manzanillo → 66367 Santa Catarina',
                   equipment: 'Chasis 40’ • Custodia opcional',
                   certs: ['ISO 28000'],
-                  eta: 'Recolecta hoy 18:00',
+                  eta: 'Cita de despacho: 24 de octubre a las 10:00 CST en CONTECON',
                   payment: 'Términos: Pago inmediato',
                   price: '$44,500 MXN',
                   score: '4.7',
+                },
+                {
+                  id: 'JG',
+                  carrier: 'Transportes Juan Gabriel SA de CV',
+                  route: 'Manzanillo → 66367 Santa Catarina',
+                  equipment: 'Contenedor: CMAU4221748 • Tamaño y Tipo: 40HC',
+                  certs: ['RFC: JGA980604VMZ', 'CAAT: 100i'],
+                  eta: 'Cita de despacho: 24 de octubre a las 10:00 CST en CONTECON',
+                  payment: 'Términos: 30 días',
+                  price: '$45,000 MXN + IVA',
+                  score: '5.0',
                 },
               ].map((offer) => (
                 <div key={offer.id} className="grid grid-cols-1 sm:grid-cols-[1.2fr_.8fr] gap-3 px-4 sm:px-5 py-4 border-b last:border-b-0 border-border hover:bg-warm-100/60 transition-colors">
@@ -129,7 +140,7 @@ export default function LandingPage() {
                     <div className="flex items-center gap-2">
                       <span className="inline-flex items-center justify-center px-2 py-0.5 rounded bg-warm-100 text-primary text-[10px] font-bold">{offer.id}</span>
                       <strong className="font-display text-base tracking-tight">{offer.carrier}</strong>
-                      <span className="text-xs text-muted-foreground">★ {offer.score}</span>
+                      <span className="text-xs text-amber-500">★ {offer.score}</span>
                     </div>
                     <p className="text-sm text-muted-foreground mt-1">{offer.route}</p>
                     <p className="text-xs text-muted-foreground mt-1">{offer.equipment}</p>
