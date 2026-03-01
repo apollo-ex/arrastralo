@@ -116,6 +116,7 @@ export default function Page() {
   const [port, setPort] = useState('Manzanillo')
   const [haulDates, setHaulDates] = useState<string[]>([])
   const [deliveryCity, setDeliveryCity] = useState('')
+  const [emptyReturnTo, setEmptyReturnTo] = useState<'Puerto' | 'Ciudad destino'>('Puerto')
 
   const [fleetBaseCity, setFleetBaseCity] = useState('')
   const [originStates, setOriginStates] = useState<string[]>([])
@@ -259,6 +260,13 @@ export default function Page() {
                 ) : (
                   <span className="text-xs text-muted-foreground">Captura manual por código postal + ciudad</span>
                 )}
+              </div>
+              <div className="grid gap-1.5">
+                <Label htmlFor="emptyReturnTo">Retorno de vacio</Label>
+                <SelectField id="emptyReturnTo" value={emptyReturnTo} onChange={(e) => setEmptyReturnTo(e.target.value as 'Puerto' | 'Ciudad destino')}>
+                  <option value="Puerto">Puerto</option>
+                  <option value="Ciudad destino">Ciudad destino</option>
+                </SelectField>
               </div>
             </div>
           ) : (
