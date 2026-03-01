@@ -434,9 +434,15 @@ export default function LandingPage() {
                       <li>• Llegada a almacén</li>
                       <li>• Retorno de vacío y cierre</li>
                     </ul>
+                    <p className="font-semibold mt-4">También por correo electrónico:</p>
+                    <ul className="mt-2 space-y-1 text-blue-100 text-[13px]">
+                      <li>• Resumen de estatus por viaje</li>
+                      <li>• Evidencias y documentos adjuntos</li>
+                      <li>• Alertas de incidencias y ETA</li>
+                    </ul>
                   </div>
 
-                  <div className="rounded-xl bg-[#ece9df] border border-[#d3cec0] p-3 sm:p-4">
+                  <div className="rounded-xl bg-[#ece9df] border border-[#d3cec0] p-3 sm:p-4 space-y-3">
                     <div className="rounded-lg bg-white p-3 text-[13px] text-[#1f2937] leading-relaxed shadow-sm">
                       <p><b>Arrástralo:</b> Tu arrastre fue asignado a <b>Transportes Juan Gabriel SA de CV</b>.</p>
                       <p className="mt-2">Ruta: Manzanillo, COL → Santa Catarina, NL</p>
@@ -446,7 +452,7 @@ export default function LandingPage() {
                       <p className="mt-1">ETA: 25 Oct 14:00 (17hrs 32min a llegada)</p>
                     </div>
 
-                    <div className="rounded-lg bg-white p-3 text-[13px] text-[#1f2937] leading-relaxed shadow-sm mt-3">
+                    <div className="rounded-lg bg-white p-3 text-[13px] text-[#1f2937] leading-relaxed shadow-sm">
                       <p>Aquí tienes el packaging list del contenedor</p>
                       <div className="mt-2 rounded-lg border border-border bg-[#f8fafc] p-2.5 flex items-center gap-3">
                         <span className="inline-flex items-center justify-center w-8 h-8 rounded bg-red-600 text-white text-[10px] font-bold">PDF</span>
@@ -455,6 +461,17 @@ export default function LandingPage() {
                           <p className="text-[11px] text-muted-foreground">6 pages • 2.3 MB • pdf</p>
                         </div>
                       </div>
+                    </div>
+
+                    <div className="rounded-lg bg-white p-3 shadow-sm border border-border">
+                      <div className="flex items-center justify-between text-[11px] text-muted-foreground">
+                        <span>Gmail</span>
+                        <span>hace 2 min</span>
+                      </div>
+                      <p className="mt-2 text-[12px] text-muted-foreground">de: notificaciones@arrastralo.com</p>
+                      <p className="text-[13px] font-semibold mt-1">Actualización de arrastre — CMAU4221748</p>
+                      <p className="text-[12px] mt-1 text-[#374151]">ETA actualizado: 25 Oct 14:00 · Documento adjunto: SPM202511050104-Packaging Details.pdf</p>
+                      <p className="mt-2"><a href="#" className="text-blue-600 underline text-[12px]">Abrir correo completo</a></p>
                     </div>
                   </div>
                 </div>
