@@ -354,19 +354,19 @@ export default function LandingPage() {
                       <polyline fill="none" stroke="#2563eb" strokeWidth="3" points="56,88 104,90 152,87 200,89 248,85 296,78 344,74 392,71 440,73 488,69 536,67 580,65" />
                       <circle cx="580" cy="65" r="4" fill="#2563eb" />
 
-                      {/* X labels */}
-                      <text x="56" y="150" fontSize="10" fill="#64748b">Sem 1</text>
-                      <text x="152" y="150" fontSize="10" fill="#64748b">Sem 3</text>
-                      <text x="248" y="150" fontSize="10" fill="#64748b">Sem 5</text>
-                      <text x="344" y="150" fontSize="10" fill="#64748b">Sem 7</text>
-                      <text x="440" y="150" fontSize="10" fill="#64748b">Sem 9</text>
-                      <text x="528" y="150" fontSize="10" fill="#64748b">Sem 11</text>
+                      {/* X labels (meses) */}
+                      <text x="56" y="150" fontSize="10" fill="#64748b">May 24</text>
+                      <text x="152" y="150" fontSize="10" fill="#64748b">Jun 24</text>
+                      <text x="248" y="150" fontSize="10" fill="#64748b">Jul 24</text>
+                      <text x="344" y="150" fontSize="10" fill="#64748b">Ago 24</text>
+                      <text x="440" y="150" fontSize="10" fill="#64748b">Sep 24</text>
+                      <text x="528" y="150" fontSize="10" fill="#64748b">Oct 24</text>
                     </svg>
                   </div>
                   <div className="mt-2 text-[11px] text-muted-foreground flex flex-wrap gap-x-3 gap-y-1">
-                    <span>Sem 1: $43,900</span>
-                    <span>Sem 6: $45,000</span>
-                    <span>Sem 12: $47,200</span>
+                    <span>May 24: $43,900</span>
+                    <span>Ago 24: $45,000</span>
+                    <span>Oct 24: $47,200</span>
                   </div>
                 </div>
               </CardContent>
