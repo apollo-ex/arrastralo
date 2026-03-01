@@ -88,43 +88,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── KPIs ────────────────────────────────────── */}
-      <section className="px-4 sm:px-6 pb-12">
-        <div className="max-w-[1100px] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-3 animate-fade-up-delay-2">
-          {kpis.map(({ icon: Icon, label, value }) => (
-            <Card key={label} className="hover:shadow-md hover:border-warm-300">
-              <CardContent className="p-4 sm:p-5">
-                <Icon size={18} className="text-primary mb-2" />
-                <span className="block text-[11px] font-bold text-muted-foreground uppercase tracking-wider">{label}</span>
-                <strong className="block font-display text-xl sm:text-2xl font-extrabold tracking-tight mt-1">{value}</strong>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
-
-      {/* ── Steps ───────────────────────────────────── */}
-      <section id="como-funciona" className="px-4 sm:px-6 py-12 sm:py-14 bg-card border-y border-border">
-        <div className="max-w-[1100px] mx-auto">
-          <h2 className="font-display text-[clamp(1.4rem,3vw,2.2rem)] font-extrabold tracking-tight mb-7">
-            Arrástralo en 1, 2 por 3
-          </h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {steps.map(({ n, title, desc }) => (
-              <Card key={n} className="bg-background hover:shadow-sm hover:border-warm-300">
-                <CardContent className="p-5 sm:p-6">
-                  <span className="inline-grid place-items-center size-9 rounded-full bg-primary text-primary-foreground font-display text-sm font-extrabold mb-4">
-                    {n}
-                  </span>
-                  <h4 className="font-display text-base sm:text-lg font-bold tracking-tight mb-1.5">{title}</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── Importer offer mock ─────────────────────── */}
       <section className="px-4 sm:px-6 py-10 sm:py-12">
         <div className="max-w-[1100px] mx-auto">
@@ -202,6 +165,43 @@ export default function LandingPage() {
               ))}
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      {/* ── KPIs ────────────────────────────────────── */}
+      <section className="px-4 sm:px-6 pb-12">
+        <div className="max-w-[1100px] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-3 animate-fade-up-delay-2">
+          {kpis.map(({ icon: Icon, label, value }) => (
+            <Card key={label} className="hover:shadow-md hover:border-warm-300">
+              <CardContent className="p-4 sm:p-5">
+                <Icon size={18} className="text-primary mb-2" />
+                <span className="block text-[11px] font-bold text-muted-foreground uppercase tracking-wider">{label}</span>
+                <strong className="block font-display text-xl sm:text-2xl font-extrabold tracking-tight mt-1">{value}</strong>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Steps ───────────────────────────────────── */}
+      <section id="como-funciona" className="px-4 sm:px-6 py-12 sm:py-14 bg-card border-y border-border">
+        <div className="max-w-[1100px] mx-auto">
+          <h2 className="font-display text-[clamp(1.4rem,3vw,2.2rem)] font-extrabold tracking-tight mb-7">
+            Arrástralo en 1, 2 por 3
+          </h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {steps.map(({ n, title, desc }) => (
+              <Card key={n} className="bg-background hover:shadow-sm hover:border-warm-300">
+                <CardContent className="p-5 sm:p-6">
+                  <span className="inline-grid place-items-center size-9 rounded-full bg-primary text-primary-foreground font-display text-sm font-extrabold mb-4">
+                    {n}
+                  </span>
+                  <h4 className="font-display text-base sm:text-lg font-bold tracking-tight mb-1.5">{title}</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 
