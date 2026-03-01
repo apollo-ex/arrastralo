@@ -508,7 +508,7 @@ export default function LandingPage() {
               title: 'Para transportistas',
               items: [
                 'Más cargas recurrentes y menos tiempo ocioso',
-                'Recibe tu pago más rapido',
+                'Recibe tu pago más rapido y olvidate de cuentas incobrables, tu pago esta protegido',
                 'Configura reglas de precios para cotizar en automatico y tener mayor probabilidad de aumentar tus ventas',
                 'Reputación por desempeño te prioritiza ante los demás',
                 'Preferencia de arrastres en tu ciudad base de flotilla',
