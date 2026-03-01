@@ -238,7 +238,10 @@ export default function LandingPage() {
                     />
                   </div>
                   <p className="text-sm text-muted-foreground mt-2">Acepte esta tarifa o envíe una contraoferta en respuesta.</p>
-                  <p className="text-[11px] text-red-600 mt-2 font-medium">El valor de la contraoferta no debe superar +/- 9.5%</p>
+                  <div className="mt-2 flex flex-wrap items-center gap-2 text-[11px]">
+                    <p className="text-red-600 font-medium">El valor de la contraoferta no debe superar +/- 9.5%</p>
+                    <span className="text-emerald-600 font-semibold">Contraoferta mínima permitida: $40,725</span>
+                  </div>
                   <div className="mt-4 flex gap-2">
                     <Button variant="secondary" className="flex-1">Contraofertar</Button>
                     <Button className="flex-1">Aceptar: $45,000 + IVA</Button>
