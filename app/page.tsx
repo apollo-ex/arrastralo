@@ -369,6 +369,10 @@ export default function Page() {
           )}
         </form>
       </div>
+
+      <footer className="border-t border-border px-4 sm:px-6 py-5 text-center text-xs text-muted-foreground">
+        Diseñado por SEPAMAR
+      </footer>
     </main>
   )
 }

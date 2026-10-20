@@ -98,7 +98,7 @@ export default function LandingPage() {
                   certs: ['ISO 9001', 'Hazmat'],
                   eta: 'Cita de despacho: 24 de octubre a las 10:00 CST en CONTECON',
                   payment: 'Condiciones de Pago: 30 días',
-                  price: '$45,900 MXN + IVA',
+                  price: '$59,500 MXN + IVA',
                   score: '4.9',
                 },
                 {
@@ -555,6 +555,10 @@ export default function LandingPage() {
           </Button>
         </div>
       </section>
+
+      <footer className="bg-dark border-t border-white/10 px-4 sm:px-6 py-5 text-center text-xs text-warm-400">
+        Diseñado por SEPAMAR
+      </footer>
     </main>
   )
 }
